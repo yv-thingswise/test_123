@@ -1,0 +1,155 @@
+{
+  "apiVersion": "thingswise.com/v1",
+  "categories": {},
+  "functions": [],
+  "labels": {},
+  "model_hierarchy": [
+    {
+      "i18n": {},
+      "keys": [
+        "key_0"
+      ],
+      "models": [
+        "{package_0}model_1"
+      ]
+    },
+    {
+      "i18n": {},
+      "keys": [
+        "key_0"
+      ],
+      "models": [
+        "{package_0}model_0"
+      ]
+    }
+  ],
+  "models": {
+    "{package_0}model_0": {
+      "command_domains": {},
+      "event_domains": {},
+      "key": "key_0",
+      "level": 1,
+      "lookups": [
+        {
+          "lookup_domain": "Lookup",
+          "lookup_field": "key_0",
+          "name": "default"
+        }
+      ],
+      "operational_domains": {
+        "domain_1": {
+          "fields": [
+            {
+              "aggregated": false,
+              "category": [],
+              "index": false,
+              "kind": "direct",
+              "label": {
+                "i18n": {
+                  "en-US": "test"
+                }
+              },
+              "name": "domain_1.test",
+              "original_name": "test",
+              "policy": "drop-field",
+              "resolution": [
+                "5s",
+                "15s",
+                "1min",
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
+              ],
+              "timeseries": true,
+              "type": "number"
+            }
+          ],
+          "mangled_name": "package_0___model_0__domain_1"
+        }
+      },
+      "primary_domains": {
+        "Lookup": {
+          "fields": [
+            {
+              "category": [],
+              "index": true,
+              "name": "key_0",
+              "type": "string"
+            }
+          ],
+          "kind": "lookup",
+          "mangled_name": "Lookup"
+        },
+        "domain_0": {
+          "fields": [
+            {
+              "category": [],
+              "default_value": 0,
+              "index": false,
+              "label": {
+                "i18n": {
+                  "en-US": "test"
+                }
+              },
+              "name": "test",
+              "type": "number"
+            }
+          ],
+          "kind": "metadata",
+          "mangled_name": "package_0___model_0__domain_0"
+        }
+      },
+      "rollup": true,
+      "scope": "{package_0}model_1",
+      "secondary_domains": {},
+      "start_of_day": 0,
+      "superclass": [
+        "{package_0}abstract_model_0"
+      ],
+      "tags": [],
+      "timezone": "Europe/Moscow"
+    },
+    "{package_0}model_1": {
+      "command_domains": {},
+      "event_domains": {},
+      "key": "key_0",
+      "level": 0,
+      "lookups": [
+        {
+          "lookup_domain": "Lookup",
+          "lookup_field": "key_0",
+          "name": "default"
+        }
+      ],
+      "operational_domains": {},
+      "primary_domains": {
+        "Lookup": {
+          "fields": [
+            {
+              "category": [],
+              "index": true,
+              "name": "key_0",
+              "type": "string"
+            }
+          ],
+          "kind": "lookup",
+          "mangled_name": "Lookup"
+        }
+      },
+      "rollup": true,
+      "secondary_domains": {},
+      "start_of_day": 0,
+      "superclass": [
+        "{package_0}abstract_model_1"
+      ],
+      "tags": [],
+      "timezone": "Europe/Moscow"
+    }
+  },
+  "project": {
+    "lookups_enabled": false,
+    "name": "123"
+  }
+}

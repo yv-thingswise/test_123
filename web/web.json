@@ -1,0 +1,40 @@
+{
+  "brandImagePath": "logo.png",
+  "defaultGeo": "instance_1",
+  "defaultLanguage": "zh-CN",
+  "designSpecsPath": "design.json",
+  "faviconPath": "favicon.png",
+  "languages": {
+    "en-US": "English",
+    "zh-CN": "\u7b80\u4f53\u4e2d\u6587"
+  },
+  "metadataDeviceField": "deviceId",
+  "metadataDomain": "Lookup",
+  "metricSpecsPath": "metric-specs.json",
+  "objectHierarchies": {
+    "key_0|key_0": {
+      "default": true,
+      "hierarchy": [
+        {
+          "geoStructField": "key_0",
+          "i18n": {},
+          "name": "key_0",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "key_0",
+          "i18n": {},
+          "name": "key_0",
+          "type": "geo"
+        }
+      ],
+      "name": "key_0|key_0"
+    }
+  },
+  "pageTitle": {
+    "i18n": {
+      "en-US": " ",
+      "zh-CN": " "
+    }
+  }
+}

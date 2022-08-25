@@ -1,0 +1,19 @@
+{
+  "domain_1.test": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": "test"
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  }
+}

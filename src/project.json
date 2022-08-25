@@ -1,0 +1,377 @@
+{
+  "_id": {
+    "$oid": "62ea44e3ea466326649cbc1d"
+  },
+  "scope": "test",
+  "project": "123",
+  "name": "123",
+  "sec_config": {
+    "app_keys": {
+      "device_db_key": [
+        {
+          "group": "symmetricKeys",
+          "name": "hQI4dlJkO"
+        }
+      ],
+      "stream_api_key": [
+        {
+          "group": "symmetricKeys",
+          "name": "d9VdzHnFu"
+        }
+      ]
+    },
+    "symmetric_keys": {
+      "d9VdzHnFu": {
+        "expiration": 0,
+        "key": "0",
+        "secret": "0"
+      },
+      "hQI4dlJkO": {
+        "expiration": 0,
+        "key": "0",
+        "secret": "0"
+      }
+    }
+  },
+  "resolutions_ttl": {},
+  "source_code_encrypted": false,
+  "start_of_day": 0,
+  "dry_run_status": {
+    "message": "project.status.deploy.finished.dry.run",
+    "progress": 100.0,
+    "stages": [
+      {
+        "title": "project.status.edge.fetch",
+        "log": "[DEBUG] - 2022-08-25 14:51:24,308 - tw_model_designer - preparing mongo client\n[DEBUG] - 2022-08-25 14:51:24,308 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2022-08-25 14:51:24,406 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2022-08-25 14:51:24,407 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2022-08-25 14:51:24,462 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2022-08-25 14:51:24,463 - tw_model_designer - preparing project dao\n[DEBUG] - 2022-08-25 14:51:24,463 - tw_model_designer - reading project\n[DEBUG] - 2022-08-25 14:51:24,566 - tw_model_designer - reading project package\n[DEBUG] - 2022-08-25 14:51:24,581 - tw_model_designer - initiating deployment\n[INFO] - 2022-08-25 14:51:24,614 - tw_model_designer - Retrieving edge mgmt information\n[DEBUG] - 2022-08-25 14:51:24,615 - tw_model_designer - Retrieved edge mgmt info successfully\n",
+        "success": true
+      },
+      {
+        "title": "project.status.workdir.init",
+        "log": "",
+        "success": true
+      },
+      {
+        "title": "project.status.repo.setting.up",
+        "log": "[INFO] - 2022-08-25 14:51:24,655 - tw_model_designer - local repo with .git file already exists in directory /opt/thingswise/model-designer/build/test/123\n[INFO] - 2022-08-25 14:51:24,682 - tw_model_designer - Repository git@github.com:yv-thingswise/test_123.git successfully initialized in the directory /opt/thingswise/model-designer/build/test/123\n",
+        "success": true
+      },
+      {
+        "title": "project.status.repo.sync",
+        "log": "[INFO] - 2022-08-25 14:51:24,697 - tw_model_designer - Synchronizing repo\n[DEBUG] - 2022-08-25 14:51:24,707 - git.cmd - Popen(['git', 'fetch', '-v', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2022-08-25 14:51:26,107 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2022-08-25 14:51:26,174 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2022-08-25 14:51:26,298 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2022-08-25 14:51:26,419 - git.cmd - Popen(['git', 'clean', '-d', '-x', '-f'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2022-08-25 14:51:26,513 - git.cmd - Popen(['git', 'checkout', '--', '.'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2022-08-25 14:51:26,568 - git.cmd - Popen(['git', 'checkout', 'main'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[INFO] - 2022-08-25 14:51:26,625 - tw_model_designer - Running git pull\n[DEBUG] - 2022-08-25 14:51:26,627 - git.cmd - Popen(['git', 'pull', '-v', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[INFO] - 2022-08-25 14:51:28,334 - tw_model_designer - Repo is synchronized, delete stale files (except src directory)\n[INFO] - 2022-08-25 14:51:28,339 - tw_model_designer - directory /opt/thingswise/model-designer/build/test/123/src does not exist, mkdir\n[INFO] - 2022-08-25 14:51:28,340 - tw_model_designer - Clean up source directory, excluding: ['tests/.*', 'data/.*', 'jets/.*', 'dt/project\\\\.yml', 'dt/dt\\\\.yml', 'dt/.*/dt\\\\.yml', 'dt/[^/]+/dm/_legacy/.*', 'web/web\\\\.json', 'web/field\\\\-specs\\\\.json', 'web/geoData/struct\\\\.json']\n[INFO] - 2022-08-25 14:51:28,426 - tw_model_designer - .gitignore file is not present, writing default\n[INFO] - 2022-08-25 14:51:28,427 - tw_model_designer - directory /opt/thingswise/model-designer/build/test/123/src/model does not exist, mkdir\n",
+        "success": true
+      },
+      {
+        "title": "project.status.repo.success",
+        "log": "[INFO] - 2022-08-25 14:51:28,437 - tw_model_designer - Writing json configs\n[INFO] - 2022-08-25 14:51:28,685 - tw_model_designer - write package: package_0 json config\n[INFO] - 2022-08-25 14:51:28,686 - tw_model_designer - Writing project json dump\n[WARNING] - 2022-08-25 14:51:28,693 - tw_model_designer - Default key/secret value is used in project security settings\n[INFO] - 2022-08-25 14:51:28,694 - tw_model_designer - directory /opt/thingswise/model-designer/build/test/123/src/jets does not exist, mkdir\n[INFO] - 2022-08-25 14:51:28,694 - tw_model_designer - Writing src/jets/sec-config.json\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.yoi",
+        "log": "[INFO] - 2022-08-25 14:51:28,714 - tw_model_designer - Running Digital Twin Abstract Model Converter\n[INFO] - 2022-08-25 14:51:28,714 - yoi_abstract_model - parsing /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n[WARNING] - 2022-08-25 14:51:28,754 - yoi_abstract_model.utils - instance instance_1 i18n en-US empty.\n[WARNING] - 2022-08-25 14:51:28,754 - yoi_abstract_model.utils - instance instance_1 i18n zh-CN empty.\n[WARNING] - 2022-08-25 14:51:28,755 - yoi_abstract_model.utils - instance instance_0 i18n en-US empty.\n[WARNING] - 2022-08-25 14:51:28,755 - yoi_abstract_model.utils - instance instance_0 i18n zh-CN empty.\n[INFO] - 2022-08-25 14:51:28,765 - yoi_abstract_model - parsed /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.generation",
+        "log": "[INFO] - 2022-08-25 14:51:28,788 - tw_model_designer - Abstract model conversion finished, generating model code\n[INFO] - 2022-08-25 14:51:28,822 - tw_model_designer - directory /opt/thingswise/model-designer/build/test/123/src/dt/package_0/dm does not exist, mkdir\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.configuration",
+        "log": "[INFO] - 2022-08-25 14:51:28,902 - tw_model_designer - Model code generation finished, create project configuration\n[INFO] - 2022-08-25 14:51:28,906 - tw_model_designer - Write to /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.dtc",
+        "log": "[INFO] - 2022-08-25 14:51:28,930 - tw_model_designer - Project configuration finished, running Digital Twin Compiler\n[INFO] - 2022-08-25 14:51:29,101 - tw_digital_twin_sdk - loading project properties from /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n[INFO] - 2022-08-25 14:51:29,612 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/dt/package_0/dm to /opt/thingswise/model-designer/build/test/123/dm/package_0\n[INFO] - 2022-08-25 14:51:29,620 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/config.json\n[INFO] - 2022-08-25 14:51:29,624 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dm/models.yaml\n[INFO] - 2022-08-25 14:51:29,681 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/dt/init_data.json to /opt/thingswise/model-designer/build/test/123/dt/init_data.json\n[INFO] - 2022-08-25 14:51:29,685 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/init_roles.json to /opt/thingswise/model-designer/build/test/123/dt/init_roles.json\n[INFO] - 2022-08-25 14:51:30,228 - digital_machine.runtime.digital_machine_runtime - Loading package: package_0 [test.123.dm.package_0]\n[INFO] - 2022-08-25 14:51:30,400 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_1 [<class 'type'>] from package test/123/package_0\n[INFO] - 2022-08-25 14:51:30,400 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_1 to package_0___model_1\n[INFO] - 2022-08-25 14:51:30,401 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_0 [<class 'type'>] from package test/123/package_0\n[INFO] - 2022-08-25 14:51:30,401 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_0 to package_0___model_0\n[DEBUG] - 2022-08-25 14:51:30,401 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_1, [], {'{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2022-08-25 14:51:30,401 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_0, [], {'{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2022-08-25 14:51:30,406 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.outputs = ()\n[DEBUG] - 2022-08-25 14:51:30,406 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.exports = (Export('domain_1.test',TimeAggregate(Input(stream(domain_1_input),'domain_1.test',None,None,None),'5s'),'5s',False), Export('domain_1.test',TimeAggregate(Placeholder('domain_1.test','5s'),'15s'),'15s',False), Export('domain_1.test',TimeAggregate(Placeholder('domain_1.test','15s'),'1min'),'1min',False), Export('domain_1.test',TimeAggregate(Placeholder('domain_1.test','1min'),'5min'),'5min',False), Export('domain_1.test',TimeAggregate(Placeholder('domain_1.test','5min'),'15min'),'15min',False), Export('domain_1.test',TimeAggregate(Placeholder('domain_1.test','15min'),'1h'),'1h',False), Export('domain_1.test',TimeAggregate(Placeholder('domain_1.test','1h'),'12h'),'12h',False), Export('domain_1.test',TimeAggregate(Placeholder('domain_1.test','12h'),'1d'),'1d',False))\n[DEBUG] - 2022-08-25 14:51:30,419 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.outputs = ()\n[DEBUG] - 2022-08-25 14:51:30,419 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.exports = ()\n[INFO] - 2022-08-25 14:51:30,431 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/input.json\n[INFO] - 2022-08-25 14:51:30,431 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/jets to /opt/thingswise/model-designer/build/test/123/jets\n[INFO] - 2022-08-25 14:51:30,433 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/cfg/edge-upload-mapping.json to /opt/thingswise/model-designer/build/test/123/cfg/edge-upload-mapping.json\n[INFO] - 2022-08-25 14:51:30,554 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dt/dt.yml\n[INFO] - 2022-08-25 14:51:30,554 - tw_digital_twin_sdk - empty output.json is omitted\n[INFO] - 2022-08-25 14:51:30,554 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/web to /opt/thingswise/model-designer/build/test/123/web\n[INFO] - 2022-08-25 14:51:30,557 - tw_digital_twin_sdk - loading /opt/thingswise/model-designer/build/test/123/src/web/geoData/struct.json\n[INFO] - 2022-08-25 14:51:30,558 - tw_digital_twin_sdk - generate objectHierarchies from geo struct and model tree\n[INFO] - 2022-08-25 14:51:30,636 - tw_digital_twin_sdk - web.json: pageTitle is not set\n[INFO] - 2022-08-25 14:51:30,639 - tw_digital_twin_sdk - web.json: faviconPath is not set\n[INFO] - 2022-08-25 14:51:30,639 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/favicon.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2022-08-25 14:51:30,642 - tw_digital_twin_sdk - web.json: brandImagePath is not set\n[INFO] - 2022-08-25 14:51:30,643 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/logo.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2022-08-25 14:51:30,659 - tw_digital_twin_sdk - web.json: languages is not set\n[INFO] - 2022-08-25 14:51:30,659 - tw_digital_twin_sdk - web.json: defaultLanguage is not set\n[INFO] - 2022-08-25 14:51:30,660 - tw_digital_twin_sdk - web.json: metadataDomain is not set\n[INFO] - 2022-08-25 14:51:30,660 - tw_digital_twin_sdk - metadataDeviceField: metadataDeviceField is not set\n[INFO] - 2022-08-25 14:51:30,660 - tw_digital_twin_sdk - web.json: objectHierarchy is not set\n[INFO] - 2022-08-25 14:51:30,661 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/web.json\n[INFO] - 2022-08-25 14:51:30,663 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/design.json\n[INFO] - 2022-08-25 14:51:30,666 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/objects.json\n[INFO] - 2022-08-25 14:51:30,694 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/metric-specs.json\n",
+        "success": true
+      }
+    ],
+    "state": "success",
+    "worker_timestamp": "2022-08-22T15:51:48.651820+00:00",
+    "build_time": "2022-08-25T14:51:30.694597+00:00"
+  },
+  "time_zone": "Europe/Moscow",
+  "packages": {
+    "63078c772aa33e42e5cf104c": {
+      "name": "package_0",
+      "project": "123",
+      "scope": "test",
+      "domains": [
+        {
+          "_id": {
+            "$oid": "63078c772aa33e42e5cf1053"
+          },
+          "columns": [
+            {
+              "id": "test",
+              "type": "REAL",
+              "label": {
+                "i18n": {
+                  "en-us": "test"
+                }
+              },
+              "default_value": 0
+            }
+          ],
+          "kind": "primary",
+          "name": "domain_0",
+          "package_id": "63078c772aa33e42e5cf104c",
+          "project": "123",
+          "scope": "test"
+        },
+        {
+          "_id": {
+            "$oid": "63078c772aa33e42e5cf1054"
+          },
+          "columns": [
+            {
+              "id": "test",
+              "type": "REAL",
+              "label": {
+                "i18n": {
+                  "en-us": "test"
+                }
+              },
+              "default_aggregation": null,
+              "field_type": "direct",
+              "resolution": "5s,15s,1min,5min,15min,1h,12h,1d",
+              "category": "",
+              "raw_data_resolution": null
+            }
+          ],
+          "kind": "operational",
+          "name": "domain_1",
+          "package_id": "63078c772aa33e42e5cf104c",
+          "project": "123",
+          "scope": "test"
+        },
+        {
+          "_id": {
+            "$oid": "63078c772aa33e42e5cf1055"
+          },
+          "columns": [
+            {
+              "id": "doublecheck",
+              "disabled": false,
+              "severity": 0
+            }
+          ],
+          "kind": "event",
+          "name": "domain_2",
+          "package_id": "63078c772aa33e42e5cf104c",
+          "project": "123",
+          "scope": "test"
+        }
+      ],
+      "models": {
+        "63078c772aa33e42e5cf104d": {
+          "attributes": {
+            "abstract": true,
+            "name": "abstract_model_0"
+          },
+          "coordinates": {},
+          "is_collapsed": false,
+          "package_id": "63078c772aa33e42e5cf104c",
+          "package_obj_id": {
+            "$oid": "63078c772aa33e42e5cf104c"
+          },
+          "project": "123",
+          "relations": {
+            "in_sub_class_of": []
+          },
+          "scope": "test",
+          "template_id": "",
+          "id": "63078c772aa33e42e5cf104d",
+          "domains": [],
+          "timezone": "Europe/Moscow",
+          "instances": []
+        },
+        "63078c772aa33e42e5cf104e": {
+          "attributes": {
+            "abstract": false,
+            "axis": {},
+            "custom_attributes": [],
+            "key": "key_0",
+            "label": {
+              "i18n": {
+                "en-US": "",
+                "zh-CN": ""
+              }
+            },
+            "name": "model_0"
+          },
+          "coordinates": {
+            "x": 43,
+            "y": 100
+          },
+          "is_collapsed": false,
+          "package_id": "63078c772aa33e42e5cf104c",
+          "package_obj_id": {
+            "$oid": "63078c772aa33e42e5cf104c"
+          },
+          "project": "123",
+          "relations": {
+            "in_scope_of": "63078c772aa33e42e5cf1050",
+            "in_sub_class_of": [
+              "63078c772aa33e42e5cf104d"
+            ]
+          },
+          "scope": "test",
+          "template_id": "1",
+          "id": "63078c772aa33e42e5cf104e",
+          "domains": [
+            {
+              "_id": {
+                "$oid": "63078c772aa33e42e5cf1056"
+              },
+              "columns": [
+                {
+                  "id": "test"
+                }
+              ],
+              "kind": "primary",
+              "model_id": "63078c772aa33e42e5cf104e",
+              "name": "domain_0",
+              "package_id": "63078c772aa33e42e5cf104c",
+              "parent_id": "63078c772aa33e42e5cf1053",
+              "project": "123",
+              "scope": "test"
+            },
+            {
+              "_id": {
+                "$oid": "63078c772aa33e42e5cf1057"
+              },
+              "columns": [
+                {
+                  "id": "test"
+                }
+              ],
+              "kind": "operational",
+              "model_id": "63078c772aa33e42e5cf104e",
+              "name": "domain_1",
+              "package_id": "63078c772aa33e42e5cf104c",
+              "parent_id": "63078c772aa33e42e5cf1054",
+              "project": "123",
+              "scope": "test"
+            }
+          ],
+          "timezone": "Europe/Moscow",
+          "instances": [
+            {
+              "_id": {
+                "$oid": "63078c772aa33e42e5cf1051"
+              },
+              "coordinates": {
+                "x": 20.222222222222285,
+                "y": 106.77777777777779
+              },
+              "is_collapsed": false,
+              "key": "instance_0",
+              "model_id": "63078c772aa33e42e5cf104e",
+              "package_id": "63078c772aa33e42e5cf104c",
+              "project": "123",
+              "scope": "instance_1",
+              "shift_slot_id": null,
+              "relations": {}
+            }
+          ]
+        },
+        "63078c772aa33e42e5cf104f": {
+          "attributes": {
+            "abstract": true,
+            "name": "abstract_model_1"
+          },
+          "coordinates": {},
+          "is_collapsed": false,
+          "package_id": "63078c772aa33e42e5cf104c",
+          "package_obj_id": {
+            "$oid": "63078c772aa33e42e5cf104c"
+          },
+          "project": "123",
+          "relations": {
+            "in_sub_class_of": []
+          },
+          "scope": "test",
+          "template_id": "",
+          "id": "63078c772aa33e42e5cf104f",
+          "domains": [],
+          "timezone": "Europe/Moscow",
+          "instances": []
+        },
+        "63078c772aa33e42e5cf1050": {
+          "attributes": {
+            "abstract": false,
+            "axis": {},
+            "key": "key_0",
+            "label": {
+              "i18n": {
+                "en-US": "",
+                "zh-CN": ""
+              }
+            },
+            "name": "model_1"
+          },
+          "coordinates": {
+            "x": 70,
+            "y": 303
+          },
+          "is_collapsed": false,
+          "package_id": "63078c772aa33e42e5cf104c",
+          "package_obj_id": {
+            "$oid": "63078c772aa33e42e5cf104c"
+          },
+          "project": "123",
+          "relations": {
+            "in_scope_of": null,
+            "in_sub_class_of": [
+              "63078c772aa33e42e5cf104f"
+            ]
+          },
+          "scope": "test",
+          "template_id": "1",
+          "id": "63078c772aa33e42e5cf1050",
+          "domains": [],
+          "timezone": "Europe/Moscow",
+          "instances": [
+            {
+              "_id": {
+                "$oid": "63078c772aa33e42e5cf1052"
+              },
+              "coordinates": {
+                "x": 32,
+                "y": 380
+              },
+              "is_collapsed": false,
+              "key": "instance_1",
+              "model_id": "63078c772aa33e42e5cf1050",
+              "package_id": "63078c772aa33e42e5cf104c",
+              "project": "123",
+              "relations": {}
+            }
+          ]
+        }
+      },
+      "edge_upload_mapping": {},
+      "command_mapping": {},
+      "authorization": {
+        "functions": [],
+        "roles": [],
+        "users": []
+      },
+      "categories": [],
+      "keys": [
+        {
+          "_id": {
+            "$oid": "63078c772aa33e42e5cf104b"
+          },
+          "key": "key_0",
+          "package_id": "63078c772aa33e42e5cf104c",
+          "project": "123",
+          "scope": "test"
+        }
+      ],
+      "shift_schedules": [],
+      "id": "63078c772aa33e42e5cf104c"
+    }
+  }
+}

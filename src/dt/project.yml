@@ -1,0 +1,6 @@
+---
+apiVersion: thingswise.com/v1
+kind: project
+spec:
+  lookups_enabled: false
+  name: '123'

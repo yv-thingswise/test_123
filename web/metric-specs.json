@@ -1,0 +1,52 @@
+{
+  "commandSpecs": {},
+  "metricSpecs": {
+    "domain_1.test": {
+      "decimal": 6,
+      "default-stats": "avg",
+      "hierarchy": [
+        "key_0|key_0"
+      ],
+      "model": [
+        "{package_0}model_0"
+      ],
+      "name": {
+        "i18n": {
+          "en-US": "test"
+        }
+      },
+      "nameWithDomain": {
+        "i18n": {
+          "en-US": "test (domain_1)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "en-US": "test"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "key_0": {
+            "key_0": {
+              "periods": [
+                "5s",
+                "15s",
+                "1min",
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
+              ]
+            }
+          }
+        }
+      },
+      "startOfDay": 0,
+      "timezone": "Europe/Moscow",
+      "unit": "",
+      "valueType": "number:statistics"
+    }
+  }
+}

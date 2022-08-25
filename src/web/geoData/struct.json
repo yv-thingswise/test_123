@@ -1,0 +1,36 @@
+{
+  "name": "instance_1",
+  "i18n": {
+    "en-US": "",
+    "zh-CN": ""
+  },
+  "key_0": {
+    "instance_0": {
+      "name": "instance_0",
+      "i18n": {
+        "en-US": "",
+        "zh-CN": ""
+      },
+      "class": [
+        {
+          "fqn": "{package_0}model_0",
+          "i18n": {}
+        },
+        {
+          "fqn": "{package_0}abstract_model_0",
+          "i18n": {}
+        }
+      ]
+    }
+  },
+  "class": [
+    {
+      "fqn": "{package_0}model_1",
+      "i18n": {}
+    },
+    {
+      "fqn": "{package_0}abstract_model_1",
+      "i18n": {}
+    }
+  ]
+}

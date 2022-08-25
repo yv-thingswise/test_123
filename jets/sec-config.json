@@ -1,0 +1,28 @@
+{
+  "symmetricKeys": {
+    "d9VdzHnFu": {
+      "expiration": 0,
+      "key": "0",
+      "secret": "0"
+    },
+    "hQI4dlJkO": {
+      "expiration": 0,
+      "key": "0",
+      "secret": "0"
+    }
+  },
+  "appKeys": {
+    "streamApiKey": [
+      {
+        "group": "symmetricKeys",
+        "name": "d9VdzHnFu"
+      }
+    ],
+    "deviceDbKey": [
+      {
+        "group": "symmetricKeys",
+        "name": "hQI4dlJkO"
+      }
+    ]
+  }
+}

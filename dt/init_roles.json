@@ -1,0 +1,130 @@
+[
+  {
+    "id": "Admin",
+    "name": {
+      "i18n": {
+        "zh-CN": "管理员",
+        "en-US": "Administrator"
+      }
+    },
+    "permissions": {
+      "@root": [
+        "APP:home:Use",
+        "APP:pages:Use",
+        "APP:app-designer:View,Edit",
+        "APP:control-center:ViewLogs,ViewMetrics,ManageTasks,ManageAuthorization",
+        "APP:model-designer:View,Edit,Publish",
+        "APP:api-doc:Use",
+        "APP:DEV_ACCESS_CTX:Use",
+        "APP:project:View,Edit",
+        "APP:api:Use",
+        "APP:edgemgmt:Use",
+        "APP:*:Use"
+      ]
+    }
+  },
+  {
+    "id": "EdgeAdmin",
+    "name": {
+      "i18n": {
+        "zh-CN": "边缘管理员",
+        "en-US": "Edge Administrator"
+      }
+    },
+    "permissions": {
+      "@root": [
+        "APP:home:Use",
+        "APP:pages:Use",
+        "APP:app-designer:View,Edit,Publish",
+        "APP:control-center:ViewMetrics",
+        "APP:model-designer:View",
+        "APP:api:Use",
+        "APP:api-doc:Use",
+        "APP:edgemgmt:Use",
+        "APP:*:Use"
+      ]
+    }
+  },
+  {
+    "id": "DataAnalyst",
+    "name": {
+      "i18n": {
+        "en-US": "Data Analyst",
+        "zh-CN": "数据分析师"
+      }
+    },
+    "permissions": {
+      "@root": [
+        "APP:home:Use",
+        "APP:pages:Use",
+        "APP:app-designer:View,Edit,Publish",
+        "APP:control-center:ViewMetrics",
+        "APP:model-designer:View",
+        "APP:api:Use",
+        "APP:api-doc:Use",
+        "APP:*:Use"
+      ]
+    }
+  },
+  {
+    "id": "SystemAnalyst",
+    "name": {
+      "i18n": {
+        "zh-CN": "系统分析师",
+        "en-US": "System Analyst"
+      }
+    },
+    "permissions": {
+      "@root": [
+        "APP:home:Use",
+        "APP:pages:Use",
+        "APP:app-designer:View,Edit,Publish",
+        "APP:control-center:ViewLogs,ViewMetrics",
+        "APP:model-designer:View",
+        "APP:api:Use",
+        "APP:api-doc:Use",
+        "APP:*:Use"
+      ]
+    }
+  },
+  {
+    "id": "ModelDev",
+    "name": {
+      "i18n": {
+        "en-US": "Model Developer",
+        "zh-CN": "模型开发者"
+      }
+    },
+    "permissions": {
+      "@root": [
+        "APP:home:Use",
+        "APP:pages:Use",
+        "APP:app-designer:View,Edit,Publish",
+        "APP:control-center:ViewLogs,ViewMetrics",
+        "APP:model-designer:View,Edit,Publish",
+        "APP:api:Use",
+        "APP:api-doc:Use",
+        "APP:*:Use"
+      ]
+    }
+  },
+  {
+    "id": "AppDev",
+    "name": {
+      "i18n": {
+        "en-US": "App Developer",
+        "zh-CN": "应用开发者"
+      }
+    },
+    "permissions": {
+      "@root": [
+        "APP:home:Use",
+        "APP:pages:Use",
+        "APP:app-designer:View,Edit,Publish",
+        "APP:api:Use",
+        "APP:api-doc:Use",
+        "APP:*:Use"
+      ]
+    }
+  }
+]
