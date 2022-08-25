@@ -1,9 +1,9 @@
 {
-  "instance_1|instance_0": {
-    "scope": "instance_1",
+  "instance_0": {
+    "scope": "",
     "mixins": {
-      "package_0___model_0__domain_0": {
-        "test": 0
+      "package_0___model_0__domain_1": {
+        "property": 0
       },
       "Lookup": {
         "class": "{package_0}model_0",
@@ -20,7 +20,7 @@
           }
         },
         "permissions": {
-          "instance_1|instance_0": [
+          "instance_0": [
             "READ:*",
             "WRITE:*",
             "yoi:_admin"
@@ -36,15 +36,15 @@
           }
         },
         "permissions": {
-          "instance_1|instance_0": [
+          "instance_0": [
             "READ:*"
           ]
         }
       }
     ]
   },
-  "instance_1": {
-    "scope": "",
+  "instance_0|instance_1": {
+    "scope": "instance_0",
     "mixins": {
       "Lookup": {
         "class": "{package_0}model_1",
@@ -61,7 +61,7 @@
           }
         },
         "permissions": {
-          "instance_1": [
+          "instance_0|instance_1": [
             "READ:*",
             "WRITE:*",
             "yoi:_admin"
@@ -77,7 +77,7 @@
           }
         },
         "permissions": {
-          "instance_1": [
+          "instance_0|instance_1": [
             "READ:*"
           ]
         }

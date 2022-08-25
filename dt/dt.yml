@@ -4,5 +4,5 @@ mixins:
     class: string
     key_0: string
   name: Lookup
-- name: package_0___model_0__domain_0
 - name: package_0___model_0__domain_1
+- name: package_0___model_0__domain_0

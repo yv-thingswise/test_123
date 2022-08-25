@@ -1,10 +1,10 @@
 {
-  "domain_1.test": {
+  "domain_0.test": {
     "category": "",
     "name": {
       "i18n": {
         "zh-CN": null,
-        "en-US": "test"
+        "en-US": null
       }
     },
     "note": {
@@ -14,6 +14,10 @@
       }
     },
     "decimal": null,
-    "unit": null
+    "unit": {
+      "i18n": {
+        "en-us": "kg"
+      }
+    }
   }
 }

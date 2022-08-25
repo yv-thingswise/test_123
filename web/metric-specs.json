@@ -1,7 +1,7 @@
 {
   "commandSpecs": {},
   "metricSpecs": {
-    "domain_1.test": {
+    "domain_0.test": {
       "decimal": 6,
       "default-stats": "avg",
       "hierarchy": [
@@ -12,40 +12,84 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "test"
+          "en-US": "domain_0.test"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "test (domain_1)"
+          "en-US": "domain_0.test (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "test"
+          "en-US": "domain_0.test"
         }
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
-            "key_0": {
-              "periods": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
-              ]
-            }
+            "periods": [
+              "5s",
+              "15s",
+              "1min",
+              "5min",
+              "15min",
+              "1h",
+              "12h",
+              "1d"
+            ]
           }
         }
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": "",
+      "unit": {
+        "i18n": {
+          "en-us": "kg"
+        }
+      },
+      "valueType": "number:statistics"
+    },
+    "domain_2.doublecheck": {
+      "decimal": 2,
+      "default-stats": "avg",
+      "hierarchy": [
+        "key_0|key_0"
+      ],
+      "model": [
+        "{package_0}model_0"
+      ],
+      "name": {
+        "i18n": {
+          "en-US": "domain_2.doublecheck"
+        }
+      },
+      "nameWithDomain": {
+        "i18n": {
+          "en-US": "domain_2.doublecheck (domain_2)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "en-US": "domain_2.doublecheck"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "key_0": {
+            "periods": [
+              "1s"
+            ]
+          }
+        }
+      },
+      "startOfDay": 0,
+      "timezone": "Europe/Moscow",
+      "unit": {
+        "i18n": {
+          "en-US": ""
+        }
+      },
       "valueType": "number:statistics"
     }
   }

@@ -9,6 +9,7 @@ spec:
     lookup_field: key_0
     name: default
   rollup: true
+  scope: model_0
   start_of_day: 0
   superclass:
   - '{package_0}abstract_model_1'
