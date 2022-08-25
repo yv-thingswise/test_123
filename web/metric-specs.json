@@ -1,85 +1,85 @@
 {
   "commandSpecs": {},
   "metricSpecs": {
-    "domain_0.test": {
+    "domain_0.state": {
       "decimal": 6,
       "default-stats": "avg",
       "hierarchy": [
         "key_0|key_0"
       ],
       "model": [
-        "{package_0}model_0"
+        "{package_0}model_1"
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.test"
+          "en-US": "domain_0.state"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.test (domain_0)"
+          "en-US": "domain_0.state (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.test"
+          "en-US": "domain_0.state"
         }
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
-            "periods": [
-              "5s",
-              "15s",
-              "1min",
-              "5min",
-              "15min",
-              "1h",
-              "12h",
-              "1d"
-            ]
+            "key_0": {
+              "periods": [
+                "5s",
+                "15s",
+                "1min",
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
+              ]
+            }
           }
         }
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": {
-        "i18n": {
-          "en-us": "kg"
-        }
-      },
+      "unit": "",
       "valueType": "number:statistics"
     },
-    "domain_2.doublecheck": {
+    "domain_2.alert": {
       "decimal": 2,
       "default-stats": "avg",
       "hierarchy": [
         "key_0|key_0"
       ],
       "model": [
-        "{package_0}model_0"
+        "{package_0}model_1"
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_2.doublecheck"
+          "en-US": "domain_2.alert"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_2.doublecheck (domain_2)"
+          "en-US": "domain_2.alert (domain_2)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_2.doublecheck"
+          "en-US": "domain_2.alert"
         }
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
-            "periods": [
-              "1s"
-            ]
+            "key_0": {
+              "periods": [
+                "1s"
+              ]
+            }
           }
         }
       },

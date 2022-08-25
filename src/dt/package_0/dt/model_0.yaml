@@ -21,65 +21,8 @@ spec:
   class: model_0
   fields:
   - category: []
-    default_value: 0
-    name: property
-    type: number
-  name: domain_1
----
-apiVersion: thingswise.com/v1
-kind: primaryDataDomain
-spec:
-  class: model_0
-  fields:
-  - category: []
     index: true
     name: key_0
     type: string
   kind: lookup
   name: Lookup
----
-apiVersion: thingswise.com/v1
-kind: operationalDataDomain
-spec:
-  class: model_0
-  fields:
-  - aggregated: false
-    category: []
-    kind: direct
-    name: domain_0.test
-    original_name: test
-    resolution:
-    - 5s
-    - 15s
-    - 1min
-    - 5min
-    - 15min
-    - 1h
-    - 12h
-    - 1d
-    timeseries: true
-    type: number
-    unit:
-      i18n:
-        en-us: kg
-  name: domain_0
----
-apiVersion: thingswise.com/v1
-kind: eventDomain
-spec:
-  class: model_0
-  fields:
-  - content:
-      info:
-      - domain_0.test
-    formula:
-    - 0
-    - $domain_0.test
-    - <=
-    - 20
-    - <=
-    name: domain_2.doublecheck
-    raw_data_resolution: 1s
-    severity: 0
-    type: number
-  name: domain_2

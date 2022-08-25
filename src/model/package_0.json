@@ -1,35 +1,30 @@
 {
-  "_id": "6307921b7c19c3063ccf1057",
+  "_id": "630798638965371396cf105c",
   "name": "package_0",
   "project": "123",
   "scope": "test",
   "domains": [
     {
-      "_id": "6307921b7c19c3063ccf105e",
+      "_id": "630798638965371396cf1063",
       "columns": [
         {
-          "id": "test",
+          "id": "state",
           "type": "REAL",
           "default_aggregation": null,
           "field_type": "direct",
           "resolution": "5s,15s,1min,5min,15min,1h,12h,1d",
-          "unit": {
-            "i18n": {
-              "en-us": "kg"
-            }
-          },
           "category": "",
           "raw_data_resolution": null
         }
       ],
       "kind": "operational",
       "name": "domain_0",
-      "package_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
       "project": "123",
       "scope": "test"
     },
     {
-      "_id": "6307921b7c19c3063ccf105f",
+      "_id": "630798638965371396cf1064",
       "columns": [
         {
           "id": "property",
@@ -39,51 +34,51 @@
       ],
       "kind": "primary",
       "name": "domain_1",
-      "package_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
       "project": "123",
       "scope": "test"
     },
     {
-      "_id": "6307921b7c19c3063ccf1060",
+      "_id": "630798638965371396cf1065",
       "columns": [
         {
-          "id": "doublecheck",
+          "id": "alert",
           "disabled": false,
           "severity": 0,
           "content": {
-            "message": "fsdfasdfasdsadf"
+            "message": "double check"
           }
         }
       ],
       "kind": "event",
       "name": "domain_2",
-      "package_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
       "project": "123",
       "scope": "test"
     }
   ],
   "models": {
-    "6307921b7c19c3063ccf1058": {
+    "630798638965371396cf105d": {
       "attributes": {
         "abstract": true,
         "name": "abstract_model_0"
       },
       "coordinates": {},
       "is_collapsed": false,
-      "package_id": "6307921b7c19c3063ccf1057",
-      "package_obj_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
+      "package_obj_id": "630798638965371396cf105c",
       "project": "123",
       "relations": {
         "in_sub_class_of": []
       },
       "scope": "test",
       "template_id": "",
-      "id": "6307921b7c19c3063ccf1058",
+      "id": "630798638965371396cf105d",
       "domains": [],
       "timezone": "Europe/Moscow",
       "instances": []
     },
-    "6307921b7c19c3063ccf1059": {
+    "630798638965371396cf105e": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -97,119 +92,61 @@
         "name": "model_0"
       },
       "coordinates": {
-        "x": 46,
-        "y": -106
+        "x": 17,
+        "y": -61
       },
       "is_collapsed": false,
-      "package_id": "6307921b7c19c3063ccf1057",
-      "package_obj_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
+      "package_obj_id": "630798638965371396cf105c",
       "project": "123",
       "relations": {
         "in_scope_of": null,
         "in_sub_class_of": [
-          "6307921b7c19c3063ccf1058"
+          "630798638965371396cf105d"
         ]
       },
       "scope": "test",
       "template_id": "1",
-      "id": "6307921b7c19c3063ccf1059",
-      "domains": [
-        {
-          "_id": "6307921b7c19c3063ccf1061",
-          "columns": [
-            {
-              "id": "test"
-            }
-          ],
-          "kind": "operational",
-          "model_id": "6307921b7c19c3063ccf1059",
-          "name": "domain_0",
-          "package_id": "6307921b7c19c3063ccf1057",
-          "parent_id": "6307921b7c19c3063ccf105e",
-          "project": "123",
-          "scope": "test"
-        },
-        {
-          "_id": "6307921b7c19c3063ccf1062",
-          "columns": [
-            {
-              "id": "property"
-            }
-          ],
-          "kind": "primary",
-          "model_id": "6307921b7c19c3063ccf1059",
-          "name": "domain_1",
-          "package_id": "6307921b7c19c3063ccf1057",
-          "parent_id": "6307921b7c19c3063ccf105f",
-          "project": "123",
-          "scope": "test"
-        },
-        {
-          "_id": "6307921b7c19c3063ccf1063",
-          "columns": [
-            {
-              "id": "doublecheck",
-              "content": {
-                "info": [
-                  "domain_0.test"
-                ]
-              },
-              "formula": {
-                "aliases": {
-                  "v0": "domain_0.test"
-                },
-                "expression": "0 <= v0 <= 20",
-                "time_alignment_limit": 5
-              }
-            }
-          ],
-          "kind": "event",
-          "model_id": "6307921b7c19c3063ccf1059",
-          "name": "domain_2",
-          "package_id": "6307921b7c19c3063ccf1057",
-          "parent_id": "6307921b7c19c3063ccf1060",
-          "project": "123",
-          "scope": "test"
-        }
-      ],
+      "id": "630798638965371396cf105e",
+      "domains": [],
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "6307921b7c19c3063ccf105c",
+          "_id": "630798638965371396cf1061",
           "coordinates": {
-            "x": -84,
-            "y": -105
+            "x": 20,
+            "y": -106
           },
           "is_collapsed": false,
           "key": "instance_0",
-          "model_id": "6307921b7c19c3063ccf1059",
-          "package_id": "6307921b7c19c3063ccf1057",
+          "model_id": "630798638965371396cf105e",
+          "package_id": "630798638965371396cf105c",
           "project": "123",
           "relations": {}
         }
       ]
     },
-    "6307921b7c19c3063ccf105a": {
+    "630798638965371396cf105f": {
       "attributes": {
         "abstract": true,
         "name": "abstract_model_1"
       },
       "coordinates": {},
       "is_collapsed": false,
-      "package_id": "6307921b7c19c3063ccf1057",
-      "package_obj_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
+      "package_obj_id": "630798638965371396cf105c",
       "project": "123",
       "relations": {
         "in_sub_class_of": []
       },
       "scope": "test",
       "template_id": "",
-      "id": "6307921b7c19c3063ccf105a",
+      "id": "630798638965371396cf105f",
       "domains": [],
       "timezone": "Europe/Moscow",
       "instances": []
     },
-    "6307921b7c19c3063ccf105b": {
+    "630798638965371396cf1060": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -223,35 +160,91 @@
         "name": "model_1"
       },
       "coordinates": {
-        "x": 50,
-        "y": 50
+        "x": 38,
+        "y": 84
       },
       "is_collapsed": false,
-      "package_id": "6307921b7c19c3063ccf1057",
-      "package_obj_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
+      "package_obj_id": "630798638965371396cf105c",
       "project": "123",
       "relations": {
-        "in_scope_of": "6307921b7c19c3063ccf1059",
+        "in_scope_of": "630798638965371396cf105e",
         "in_sub_class_of": [
-          "6307921b7c19c3063ccf105a"
+          "630798638965371396cf105f"
         ]
       },
       "scope": "test",
       "template_id": "1",
-      "id": "6307921b7c19c3063ccf105b",
-      "domains": [],
+      "id": "630798638965371396cf1060",
+      "domains": [
+        {
+          "_id": "630798638965371396cf1066",
+          "columns": [
+            {
+              "id": "state"
+            }
+          ],
+          "kind": "operational",
+          "model_id": "630798638965371396cf1060",
+          "name": "domain_0",
+          "package_id": "630798638965371396cf105c",
+          "parent_id": "630798638965371396cf1063",
+          "project": "123",
+          "scope": "test"
+        },
+        {
+          "_id": "630798638965371396cf1067",
+          "columns": [
+            {
+              "id": "property"
+            }
+          ],
+          "kind": "primary",
+          "model_id": "630798638965371396cf1060",
+          "name": "domain_1",
+          "package_id": "630798638965371396cf105c",
+          "parent_id": "630798638965371396cf1064",
+          "project": "123",
+          "scope": "test"
+        },
+        {
+          "_id": "630798638965371396cf1068",
+          "columns": [
+            {
+              "id": "alert",
+              "content": {
+                "info": []
+              },
+              "formula": {
+                "aliases": {
+                  "v0": "domain_0.state"
+                },
+                "expression": "0 <= v0 <= 20",
+                "time_alignment_limit": 5
+              }
+            }
+          ],
+          "kind": "event",
+          "model_id": "630798638965371396cf1060",
+          "name": "domain_2",
+          "package_id": "630798638965371396cf105c",
+          "parent_id": "630798638965371396cf1065",
+          "project": "123",
+          "scope": "test"
+        }
+      ],
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "6307921b7c19c3063ccf105d",
+          "_id": "630798638965371396cf1062",
           "coordinates": {
-            "x": -66,
-            "y": -19
+            "x": 13,
+            "y": 166
           },
           "is_collapsed": false,
           "key": "instance_1",
-          "model_id": "6307921b7c19c3063ccf105b",
-          "package_id": "6307921b7c19c3063ccf1057",
+          "model_id": "630798638965371396cf1060",
+          "package_id": "630798638965371396cf105c",
           "project": "123",
           "scope": "instance_0",
           "shift_slot_id": null,
@@ -267,20 +260,12 @@
     "roles": [],
     "users": []
   },
-  "categories": [
-    {
-      "_id": "6307921b7c19c3063ccf1054",
-      "category": "category_0",
-      "package_id": "6307921b7c19c3063ccf1057",
-      "project": "123",
-      "scope": "test"
-    }
-  ],
+  "categories": [],
   "keys": [
     {
-      "_id": "6307921b7c19c3063ccf1056",
+      "_id": "630798638965371396cf105b",
       "key": "key_0",
-      "package_id": "6307921b7c19c3063ccf1057",
+      "package_id": "630798638965371396cf105c",
       "project": "123",
       "scope": "test"
     }

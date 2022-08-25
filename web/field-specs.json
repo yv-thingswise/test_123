@@ -1,5 +1,5 @@
 {
-  "domain_0.test": {
+  "domain_0.state": {
     "category": "",
     "name": {
       "i18n": {
@@ -14,10 +14,6 @@
       }
     },
     "decimal": null,
-    "unit": {
-      "i18n": {
-        "en-us": "kg"
-      }
-    }
+    "unit": null
   }
 }

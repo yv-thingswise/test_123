@@ -2,9 +2,7 @@
 apiVersion: thingswise.com/v1
 kind: package
 spec:
-  categories:
-  - i18n: {}
-    name: category_0
+  categories: []
   functions: []
   keys:
   - i18n: {}
