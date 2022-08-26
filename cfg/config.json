@@ -67,7 +67,9 @@
           "fields": [
             {
               "content": {
-                "info": []
+                "info": [
+                  "domain_0.state"
+                ]
               },
               "formula": [
                 0,
@@ -107,14 +109,9 @@
               "original_name": "state",
               "policy": "drop-field",
               "resolution": [
-                "5s",
                 "15s",
                 "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
+                "5min"
               ],
               "timeseries": true,
               "type": "number"

@@ -22,10 +22,11 @@ spec:
   class: model_1
   fields:
   - category: []
-    default_value: 0
-    name: property
-    type: number
-  name: domain_1
+    index: true
+    name: key_0
+    type: string
+  kind: lookup
+  name: Lookup
 ---
 apiVersion: thingswise.com/v1
 kind: primaryDataDomain
@@ -33,11 +34,10 @@ spec:
   class: model_1
   fields:
   - category: []
-    index: true
-    name: key_0
-    type: string
-  kind: lookup
-  name: Lookup
+    default_value: 0
+    name: property
+    type: number
+  name: domain_1
 ---
 apiVersion: thingswise.com/v1
 kind: operationalDataDomain
@@ -50,14 +50,9 @@ spec:
     name: domain_0.state
     original_name: state
     resolution:
-    - 5s
     - 15s
     - 1min
     - 5min
-    - 15min
-    - 1h
-    - 12h
-    - 1d
     timeseries: true
     type: number
   name: domain_0
@@ -68,7 +63,8 @@ spec:
   class: model_1
   fields:
   - content:
-      info: []
+      info:
+      - domain_0.state
     formula:
     - 0
     - $domain_0.state
