@@ -72,11 +72,9 @@
                 ]
               },
               "formula": [
-                0,
                 "$domain_0.state",
-                "<=",
-                20,
-                "<="
+                5,
+                ">"
               ],
               "index": false,
               "name": "domain_2.alert",
