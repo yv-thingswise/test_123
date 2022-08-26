@@ -16,7 +16,7 @@
     {
       "i18n": {},
       "keys": [
-        "key_0"
+        "key_1"
       ],
       "models": [
         "{package_0}model_1"
@@ -88,12 +88,12 @@
           "mangled_name": "package_0___model_1__domain_2"
         }
       },
-      "key": "key_0",
+      "key": "key_1",
       "level": 1,
       "lookups": [
         {
           "lookup_domain": "Lookup",
-          "lookup_field": "key_0",
+          "lookup_field": "key_1",
           "name": "default"
         }
       ],
@@ -127,6 +127,12 @@
               "category": [],
               "index": true,
               "name": "key_0",
+              "type": "string"
+            },
+            {
+              "category": [],
+              "index": true,
+              "name": "key_1",
               "type": "string"
             }
           ],

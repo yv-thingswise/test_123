@@ -7,4 +7,6 @@ spec:
   keys:
   - i18n: {}
     name: key_0
+  - i18n: {}
+    name: key_1
   name: package_0

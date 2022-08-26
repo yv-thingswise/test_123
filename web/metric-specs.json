@@ -5,7 +5,7 @@
       "decimal": 6,
       "default-stats": "avg",
       "hierarchy": [
-        "key_0|key_0"
+        "key_0|key_1"
       ],
       "model": [
         "{package_0}model_1"
@@ -28,7 +28,7 @@
       "querySpecs": {
         "timeseries": {
           "key_0": {
-            "key_0": {
+            "key_1": {
               "periods": [
                 "15s",
                 "1min",
@@ -47,7 +47,7 @@
       "decimal": 2,
       "default-stats": "avg",
       "hierarchy": [
-        "key_0|key_0"
+        "key_0|key_1"
       ],
       "model": [
         "{package_0}model_1"
@@ -70,7 +70,7 @@
       "querySpecs": {
         "timeseries": {
           "key_0": {
-            "key_0": {
+            "key_1": {
               "periods": [
                 "1s"
               ]

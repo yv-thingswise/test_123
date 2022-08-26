@@ -12,7 +12,7 @@
   "metadataDomain": "Lookup",
   "metricSpecsPath": "metric-specs.json",
   "objectHierarchies": {
-    "key_0|key_0": {
+    "key_0|key_1": {
       "default": true,
       "hierarchy": [
         {
@@ -22,13 +22,13 @@
           "type": "geo"
         },
         {
-          "geoStructField": "key_0",
+          "geoStructField": "key_1",
           "i18n": {},
-          "name": "key_0",
+          "name": "key_1",
           "type": "geo"
         }
       ],
-      "name": "key_0|key_0"
+      "name": "key_0|key_1"
     }
   },
   "pageTitle": {

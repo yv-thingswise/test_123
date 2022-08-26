@@ -48,7 +48,8 @@
       },
       "Lookup": {
         "class": "{package_0}model_1",
-        "key_0": "instance_1"
+        "key_1": "instance_1",
+        "key_0": "instance_0"
       }
     },
     "groups": [

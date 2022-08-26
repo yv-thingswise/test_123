@@ -3,10 +3,10 @@ apiVersion: thingswise.com/v1
 kind: entity
 spec:
   class: model_1
-  key: key_0
+  key: key_1
   lookups:
   - lookup_domain: Lookup
-    lookup_field: key_0
+    lookup_field: key_1
     name: default
   rollup: true
   scope: model_0
@@ -24,6 +24,10 @@ spec:
   - category: []
     index: true
     name: key_0
+    type: string
+  - category: []
+    index: true
+    name: key_1
     type: string
   kind: lookup
   name: Lookup

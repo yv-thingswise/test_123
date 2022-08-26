@@ -3,6 +3,7 @@ mixins:
 - fields:
     class: string
     key_0: string
+    key_1: string
   name: Lookup
 - name: package_0___model_1__domain_1
 - name: package_0___model_1__domain_0
