@@ -75,8 +75,10 @@
                 0,
                 "$domain_0.state",
                 "<=",
+                "$domain_0.state",
                 20,
-                "<="
+                "<=",
+                "and"
               ],
               "index": false,
               "name": "domain_2.alert",
