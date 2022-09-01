@@ -70,9 +70,11 @@ spec:
       info:
       - domain_0.state
     formula:
+    - 0
     - $domain_0.state
-    - 5
-    - '>'
+    - <=
+    - 20
+    - <=
     name: domain_2.alert
     raw_data_resolution: 1s
     severity: 0
