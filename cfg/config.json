@@ -54,42 +54,13 @@
       "rollup": true,
       "secondary_domains": {},
       "start_of_day": 0,
-      "superclass": [
-        "{package_0}abstract_model_0"
-      ],
+      "superclass": [],
       "tags": [],
       "timezone": "Europe/Moscow"
     },
     "{package_0}model_1": {
       "command_domains": {},
-      "event_domains": {
-        "domain_2": {
-          "fields": [
-            {
-              "content": {
-                "info": [
-                  "domain_0.state"
-                ]
-              },
-              "formula": [
-                0,
-                "$domain_0.state",
-                "<=",
-                "$domain_0.state",
-                20,
-                "<=",
-                "and"
-              ],
-              "index": false,
-              "name": "domain_2.alert",
-              "raw_data_resolution": "1s",
-              "severity": 0,
-              "type": "number"
-            }
-          ],
-          "mangled_name": "package_0___model_1__domain_2"
-        }
-      },
+      "event_domains": {},
       "key": "key_1",
       "level": 1,
       "lookups": [
@@ -107,13 +78,60 @@
               "category": [],
               "index": false,
               "kind": "direct",
-              "name": "domain_0.state",
-              "original_name": "state",
+              "name": "domain_0.real",
+              "original_name": "real",
               "policy": "drop-field",
               "resolution": [
+                "5s",
                 "15s",
                 "1min",
-                "5min"
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
+              ],
+              "timeseries": true,
+              "type": "number"
+            },
+            {
+              "aggregated": false,
+              "category": [],
+              "index": false,
+              "kind": "direct",
+              "name": "domain_0.real_0",
+              "original_name": "real_0",
+              "policy": "drop-field",
+              "resolution": [
+                "5s",
+                "15s",
+                "1min",
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
+              ],
+              "timeseries": true,
+              "type": "number"
+            },
+            {
+              "aggregated": false,
+              "category": [],
+              "index": false,
+              "kind": "direct",
+              "name": "domain_0.real_1",
+              "original_name": "real_1",
+              "policy": "drop-field",
+              "resolution": [
+                "5s",
+                "15s",
+                "1min",
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
               ],
               "timeseries": true,
               "type": "number"
@@ -140,28 +158,13 @@
           ],
           "kind": "lookup",
           "mangled_name": "Lookup"
-        },
-        "domain_1": {
-          "fields": [
-            {
-              "category": [],
-              "default_value": 0,
-              "index": false,
-              "name": "property",
-              "type": "number"
-            }
-          ],
-          "kind": "metadata",
-          "mangled_name": "package_0___model_1__domain_1"
         }
       },
       "rollup": true,
       "scope": "{package_0}model_0",
       "secondary_domains": {},
       "start_of_day": 0,
-      "superclass": [
-        "{package_0}abstract_model_1"
-      ],
+      "superclass": [],
       "tags": [],
       "timezone": "Europe/Moscow"
     }

@@ -43,9 +43,6 @@
   "instance_0|instance_1": {
     "scope": "instance_0",
     "mixins": {
-      "package_0___model_1__domain_1": {
-        "property": 0
-      },
       "Lookup": {
         "class": "{package_0}model_1",
         "key_1": "instance_1",

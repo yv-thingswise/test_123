@@ -1,14 +1,14 @@
 {
   "symmetricKeys": {
     "d9VdzHnFu": {
-      "expiration": 0,
       "key": "0",
-      "secret": "0"
+      "secret": "0",
+      "expiration": 0
     },
     "hQI4dlJkO": {
-      "expiration": 0,
       "key": "0",
-      "secret": "0"
+      "secret": "0",
+      "expiration": 0
     }
   },
   "appKeys": {

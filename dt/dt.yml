@@ -1,6 +1,5 @@
 collate_search: false
 mixins:
-- name: package_0___model_1__domain_1
 - fields:
     class: string
     key_0: string

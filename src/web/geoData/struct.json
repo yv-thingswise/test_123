@@ -15,10 +15,6 @@
         {
           "fqn": "{package_0}model_1",
           "i18n": {}
-        },
-        {
-          "fqn": "{package_0}abstract_model_1",
-          "i18n": {}
         }
       ]
     }
@@ -26,10 +22,6 @@
   "class": [
     {
       "fqn": "{package_0}model_0",
-      "i18n": {}
-    },
-    {
-      "fqn": "{package_0}abstract_model_0",
       "i18n": {}
     }
   ]

@@ -10,8 +10,7 @@ spec:
     name: default
   rollup: true
   start_of_day: 0
-  superclass:
-  - '{package_0}abstract_model_0'
+  superclass: []
   tags: []
   timezone: Europe/Moscow
 ---

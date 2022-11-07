@@ -1,7 +1,7 @@
 {
   "commandSpecs": {},
   "metricSpecs": {
-    "domain_0.state": {
+    "domain_0.real": {
       "decimal": 6,
       "default-stats": "avg",
       "hierarchy": [
@@ -12,17 +12,17 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.state"
+          "en-US": "domain_0.real"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.state (domain_0)"
+          "en-US": "domain_0.real (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.state"
+          "en-US": "domain_0.real"
         }
       },
       "querySpecs": {
@@ -30,9 +30,14 @@
           "key_0": {
             "key_1": {
               "periods": [
+                "5s",
                 "15s",
                 "1min",
-                "5min"
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
               ]
             }
           }
@@ -43,8 +48,8 @@
       "unit": "",
       "valueType": "number:statistics"
     },
-    "domain_2.alert": {
-      "decimal": 2,
+    "domain_0.real_0": {
+      "decimal": 6,
       "default-stats": "avg",
       "hierarchy": [
         "key_0|key_1"
@@ -54,17 +59,17 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_2.alert"
+          "en-US": "domain_0.real_0"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_2.alert (domain_2)"
+          "en-US": "domain_0.real_0 (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_2.alert"
+          "en-US": "domain_0.real_0"
         }
       },
       "querySpecs": {
@@ -72,7 +77,14 @@
           "key_0": {
             "key_1": {
               "periods": [
-                "1s"
+                "5s",
+                "15s",
+                "1min",
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
               ]
             }
           }
@@ -80,11 +92,54 @@
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": {
+      "unit": "",
+      "valueType": "number:statistics"
+    },
+    "domain_0.real_1": {
+      "decimal": 6,
+      "default-stats": "avg",
+      "hierarchy": [
+        "key_0|key_1"
+      ],
+      "model": [
+        "{package_0}model_1"
+      ],
+      "name": {
         "i18n": {
-          "en-US": ""
+          "en-US": "domain_0.real_1"
         }
       },
+      "nameWithDomain": {
+        "i18n": {
+          "en-US": "domain_0.real_1 (domain_0)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "en-US": "domain_0.real_1"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "key_0": {
+            "key_1": {
+              "periods": [
+                "5s",
+                "15s",
+                "1min",
+                "5min",
+                "15min",
+                "1h",
+                "12h",
+                "1d"
+              ]
+            }
+          }
+        }
+      },
+      "startOfDay": 0,
+      "timezone": "Europe/Moscow",
+      "unit": "",
       "valueType": "number:statistics"
     }
   }

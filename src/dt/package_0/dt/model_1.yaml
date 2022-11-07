@@ -11,21 +11,9 @@ spec:
   rollup: true
   scope: model_0
   start_of_day: 0
-  superclass:
-  - '{package_0}abstract_model_1'
+  superclass: []
   tags: []
   timezone: Europe/Moscow
----
-apiVersion: thingswise.com/v1
-kind: primaryDataDomain
-spec:
-  class: model_1
-  fields:
-  - category: []
-    default_value: 0
-    name: property
-    type: number
-  name: domain_1
 ---
 apiVersion: thingswise.com/v1
 kind: primaryDataDomain
@@ -51,34 +39,49 @@ spec:
   - aggregated: false
     category: []
     kind: direct
-    name: domain_0.state
-    original_name: state
+    name: domain_0.real
+    original_name: real
     resolution:
+    - 5s
     - 15s
     - 1min
     - 5min
+    - 15min
+    - 1h
+    - 12h
+    - 1d
+    timeseries: true
+    type: number
+  - aggregated: false
+    category: []
+    kind: direct
+    name: domain_0.real_0
+    original_name: real_0
+    resolution:
+    - 5s
+    - 15s
+    - 1min
+    - 5min
+    - 15min
+    - 1h
+    - 12h
+    - 1d
+    timeseries: true
+    type: number
+  - aggregated: false
+    category: []
+    kind: direct
+    name: domain_0.real_1
+    original_name: real_1
+    resolution:
+    - 5s
+    - 15s
+    - 1min
+    - 5min
+    - 15min
+    - 1h
+    - 12h
+    - 1d
     timeseries: true
     type: number
   name: domain_0
----
-apiVersion: thingswise.com/v1
-kind: eventDomain
-spec:
-  class: model_1
-  fields:
-  - content:
-      info:
-      - domain_0.state
-    formula:
-    - 0
-    - $domain_0.state
-    - <=
-    - $domain_0.state
-    - 20
-    - <=
-    - and
-    name: domain_2.alert
-    raw_data_resolution: 1s
-    severity: 0
-    type: number
-  name: domain_2
