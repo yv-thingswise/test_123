@@ -1,5 +1,5 @@
 {
-  "domain_0.real": {
+  "domain_0.tensor": {
     "category": "",
     "name": {
       "i18n": {
@@ -13,10 +13,10 @@
         "en-US": null
       }
     },
-    "decimal": null,
+    "decimal": 1,
     "unit": null
   },
-  "domain_0.real_0": {
+  "domain_0.tensor_0": {
     "category": "",
     "name": {
       "i18n": {
@@ -30,24 +30,7 @@
         "en-US": null
       }
     },
-    "decimal": null,
-    "unit": null
-  },
-  "domain_0.real_1": {
-    "category": "",
-    "name": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "note": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "decimal": null,
+    "decimal": 1,
     "unit": null
   }
 }

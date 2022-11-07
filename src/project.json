@@ -97,35 +97,36 @@
   "time_zone": "Europe/Moscow",
   "source_code_encrypted": false,
   "packages": {
-    "6368ce537824ffd1b586d1b6": {
+    "6368e0d738a824fb2e86d1b8": {
       "name": "package_0",
       "project": "123",
       "scope": "test",
       "domains": [
         {
           "_id": {
-            "$oid": "6368ce537824ffd1b586d1bb"
+            "$oid": "6368e0d738a824fb2e86d1bd"
           },
           "columns": [
             {
-              "id": "real",
-              "type": "REAL",
+              "id": "tensor",
+              "type": "TENSOR",
               "default_aggregation": null,
               "field_type": "direct",
-              "resolution": "5s,15s,1min,5min,15min,1h,12h,1d",
+              "resolution": "",
               "category": "",
+              "decimals": 1,
               "raw_data_resolution": null
             }
           ],
           "kind": "operational",
           "name": "domain_0",
-          "package_id": "6368ce537824ffd1b586d1b6",
+          "package_id": "6368e0d738a824fb2e86d1b8",
           "project": "123",
           "scope": "test"
         }
       ],
       "models": {
-        "6368ce537824ffd1b586d1b7": {
+        "6368e0d738a824fb2e86d1b9": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -143,9 +144,9 @@
             "y": 96.66666666666666
           },
           "is_collapsed": false,
-          "package_id": "6368ce537824ffd1b586d1b6",
+          "package_id": "6368e0d738a824fb2e86d1b8",
           "package_obj_id": {
-            "$oid": "6368ce537824ffd1b586d1b6"
+            "$oid": "6368e0d738a824fb2e86d1b8"
           },
           "project": "123",
           "relations": {
@@ -154,13 +155,13 @@
           },
           "scope": "test",
           "template_id": "1",
-          "id": "6368ce537824ffd1b586d1b7",
+          "id": "6368e0d738a824fb2e86d1b9",
           "domains": [],
           "timezone": "Europe/Moscow",
           "instances": [
             {
               "_id": {
-                "$oid": "6368ce537824ffd1b586d1b9"
+                "$oid": "6368e0d738a824fb2e86d1bb"
               },
               "coordinates": {
                 "x": 221.66666666666663,
@@ -168,14 +169,14 @@
               },
               "is_collapsed": false,
               "key": "instance_0",
-              "model_id": "6368ce537824ffd1b586d1b7",
-              "package_id": "6368ce537824ffd1b586d1b6",
+              "model_id": "6368e0d738a824fb2e86d1b9",
+              "package_id": "6368e0d738a824fb2e86d1b8",
               "project": "123",
               "relations": {}
             }
           ]
         },
-        "6368ce537824ffd1b586d1b8": {
+        "6368e0d738a824fb2e86d1ba": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -193,41 +194,37 @@
             "y": 310.0000000000001
           },
           "is_collapsed": false,
-          "package_id": "6368ce537824ffd1b586d1b6",
+          "package_id": "6368e0d738a824fb2e86d1b8",
           "package_obj_id": {
-            "$oid": "6368ce537824ffd1b586d1b6"
+            "$oid": "6368e0d738a824fb2e86d1b8"
           },
           "project": "123",
           "relations": {
-            "in_scope_of": "6368ce537824ffd1b586d1b7",
+            "in_scope_of": "6368e0d738a824fb2e86d1b9",
             "in_sub_class_of": []
           },
           "scope": "test",
           "template_id": "1",
-          "id": "6368ce537824ffd1b586d1b8",
+          "id": "6368e0d738a824fb2e86d1ba",
           "domains": [
             {
               "_id": {
-                "$oid": "6368ce537824ffd1b586d1bc"
+                "$oid": "6368e0d738a824fb2e86d1be"
               },
               "columns": [
                 {
-                  "id": "real"
+                  "id": "tensor"
                 },
                 {
-                  "id": "real",
-                  "child_id": "real_0"
-                },
-                {
-                  "id": "real",
-                  "child_id": "real_1"
+                  "id": "tensor",
+                  "child_id": "tensor_0"
                 }
               ],
               "kind": "operational",
-              "model_id": "6368ce537824ffd1b586d1b8",
+              "model_id": "6368e0d738a824fb2e86d1ba",
               "name": "domain_0",
-              "package_id": "6368ce537824ffd1b586d1b6",
-              "parent_id": "6368ce537824ffd1b586d1bb",
+              "package_id": "6368e0d738a824fb2e86d1b8",
+              "parent_id": "6368e0d738a824fb2e86d1bd",
               "project": "123",
               "scope": "test"
             }
@@ -236,7 +233,7 @@
           "instances": [
             {
               "_id": {
-                "$oid": "6368ce537824ffd1b586d1ba"
+                "$oid": "6368e0d738a824fb2e86d1bc"
               },
               "coordinates": {
                 "x": 348.33333333333337,
@@ -244,8 +241,8 @@
               },
               "is_collapsed": false,
               "key": "instance_1",
-              "model_id": "6368ce537824ffd1b586d1b8",
-              "package_id": "6368ce537824ffd1b586d1b6",
+              "model_id": "6368e0d738a824fb2e86d1ba",
+              "package_id": "6368e0d738a824fb2e86d1b8",
               "project": "123",
               "scope": "instance_0",
               "shift_slot_id": null,
@@ -265,25 +262,25 @@
       "keys": [
         {
           "_id": {
-            "$oid": "6368ce537824ffd1b586d1b4"
+            "$oid": "6368e0d738a824fb2e86d1b6"
           },
           "key": "key_0",
-          "package_id": "6368ce537824ffd1b586d1b6",
+          "package_id": "6368e0d738a824fb2e86d1b8",
           "project": "123",
           "scope": "test"
         },
         {
           "_id": {
-            "$oid": "6368ce537824ffd1b586d1b5"
+            "$oid": "6368e0d738a824fb2e86d1b7"
           },
           "key": "key_1",
-          "package_id": "6368ce537824ffd1b586d1b6",
+          "package_id": "6368e0d738a824fb2e86d1b8",
           "project": "123",
           "scope": "test"
         }
       ],
       "shift_schedules": [],
-      "id": "6368ce537824ffd1b586d1b6"
+      "id": "6368e0d738a824fb2e86d1b8"
     }
   }
 }

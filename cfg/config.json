@@ -76,65 +76,28 @@
             {
               "aggregated": false,
               "category": [],
+              "decimals": 1,
               "index": false,
               "kind": "direct",
-              "name": "domain_0.real",
-              "original_name": "real",
+              "name": "domain_0.tensor",
+              "original_name": "tensor",
               "policy": "drop-field",
-              "resolution": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
-              ],
+              "resolution": [],
               "timeseries": true,
-              "type": "number"
+              "type": "string"
             },
             {
               "aggregated": false,
               "category": [],
+              "decimals": 1,
               "index": false,
               "kind": "direct",
-              "name": "domain_0.real_0",
-              "original_name": "real_0",
+              "name": "domain_0.tensor_0",
+              "original_name": "tensor_0",
               "policy": "drop-field",
-              "resolution": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
-              ],
+              "resolution": [],
               "timeseries": true,
-              "type": "number"
-            },
-            {
-              "aggregated": false,
-              "category": [],
-              "index": false,
-              "kind": "direct",
-              "name": "domain_0.real_1",
-              "original_name": "real_1",
-              "policy": "drop-field",
-              "resolution": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
-              ],
-              "timeseries": true,
-              "type": "number"
+              "type": "string"
             }
           ],
           "mangled_name": "package_0___model_1__domain_0"

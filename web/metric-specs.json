@@ -1,8 +1,8 @@
 {
   "commandSpecs": {},
   "metricSpecs": {
-    "domain_0.real": {
-      "decimal": 6,
+    "domain_0.tensor": {
+      "decimal": 1,
       "default-stats": "avg",
       "hierarchy": [
         "key_0|key_1"
@@ -12,44 +12,39 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.real"
+          "en-US": "domain_0.tensor"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.real (domain_0)"
+          "en-US": "domain_0.tensor (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.real"
+          "en-US": "domain_0.tensor"
         }
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
             "key_1": {
-              "periods": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
-              ]
+              "periods": []
             }
           }
         }
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": "",
+      "unit": {
+        "i18n": {
+          "en-US": ""
+        }
+      },
       "valueType": "number:statistics"
     },
-    "domain_0.real_0": {
-      "decimal": 6,
+    "domain_0.tensor_0": {
+      "decimal": 1,
       "default-stats": "avg",
       "hierarchy": [
         "key_0|key_1"
@@ -59,87 +54,35 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.real_0"
+          "en-US": "domain_0.tensor_0"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.real_0 (domain_0)"
+          "en-US": "domain_0.tensor_0 (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.real_0"
+          "en-US": "domain_0.tensor_0"
         }
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
             "key_1": {
-              "periods": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
-              ]
+              "periods": []
             }
           }
         }
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": "",
-      "valueType": "number:statistics"
-    },
-    "domain_0.real_1": {
-      "decimal": 6,
-      "default-stats": "avg",
-      "hierarchy": [
-        "key_0|key_1"
-      ],
-      "model": [
-        "{package_0}model_1"
-      ],
-      "name": {
+      "unit": {
         "i18n": {
-          "en-US": "domain_0.real_1"
+          "en-US": ""
         }
       },
-      "nameWithDomain": {
-        "i18n": {
-          "en-US": "domain_0.real_1 (domain_0)"
-        }
-      },
-      "note": {
-        "i18n": {
-          "en-US": "domain_0.real_1"
-        }
-      },
-      "querySpecs": {
-        "timeseries": {
-          "key_0": {
-            "key_1": {
-              "periods": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min",
-                "1h",
-                "12h",
-                "1d"
-              ]
-            }
-          }
-        }
-      },
-      "startOfDay": 0,
-      "timezone": "Europe/Moscow",
-      "unit": "",
       "valueType": "number:statistics"
     }
   }

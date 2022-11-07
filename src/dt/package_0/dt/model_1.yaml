@@ -38,50 +38,20 @@ spec:
   fields:
   - aggregated: false
     category: []
+    decimals: 1
     kind: direct
-    name: domain_0.real
-    original_name: real
-    resolution:
-    - 5s
-    - 15s
-    - 1min
-    - 5min
-    - 15min
-    - 1h
-    - 12h
-    - 1d
+    name: domain_0.tensor
+    original_name: tensor
+    resolution: []
     timeseries: true
-    type: number
+    type: string
   - aggregated: false
     category: []
+    decimals: 1
     kind: direct
-    name: domain_0.real_0
-    original_name: real_0
-    resolution:
-    - 5s
-    - 15s
-    - 1min
-    - 5min
-    - 15min
-    - 1h
-    - 12h
-    - 1d
+    name: domain_0.tensor_0
+    original_name: tensor_0
+    resolution: []
     timeseries: true
-    type: number
-  - aggregated: false
-    category: []
-    kind: direct
-    name: domain_0.real_1
-    original_name: real_1
-    resolution:
-    - 5s
-    - 15s
-    - 1min
-    - 5min
-    - 15min
-    - 1h
-    - 12h
-    - 1d
-    timeseries: true
-    type: number
+    type: string
   name: domain_0
