@@ -1,0 +1,14 @@
+{
+  "{package_0}model_1": {
+    "package_0___model_1.domain_0_input_csv": {
+      "domain": "domain_0",
+      "stream": "package_0___model_1.domain_0_input",
+      "type": "csv"
+    },
+    "package_0___model_1.domain_0_input_json": {
+      "domain": "domain_0",
+      "stream": "package_0___model_1.domain_0_input",
+      "type": "json"
+    }
+  }
+}

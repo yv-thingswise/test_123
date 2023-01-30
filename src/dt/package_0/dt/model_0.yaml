@@ -20,6 +20,16 @@ spec:
   class: model_0
   fields:
   - category: []
+    name: Name
+    type: string
+  name: Basic
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: model_0
+  fields:
+  - category: []
     index: true
     name: key_0
     type: string

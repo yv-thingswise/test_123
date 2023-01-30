@@ -1,32 +1,40 @@
 {
-  "_id": "636900187ad08c50ec9298f2",
+  "_id": "63d78519d25ab150213bc18d",
   "name": "package_0",
   "project": "123",
   "scope": "test",
   "domains": [
     {
-      "_id": "636900187ad08c50ec9298f7",
+      "_id": "63d78519d25ab150213bc193",
       "columns": [
         {
-          "id": "tensor",
-          "type": "TENSOR",
-          "default_aggregation": null,
+          "id": "item",
+          "type": "REAL",
+          "default_aggregation": "avg",
           "field_type": "direct",
-          "resolution": "",
+          "resolution": "5s,15s,1min,5min",
           "category": "",
-          "decimals": 1,
+          "raw_data_resolution": null
+        },
+        {
+          "id": "output",
+          "type": "REAL",
+          "default_aggregation": "avg",
+          "field_type": "direct",
+          "resolution": "5s,15s,1min,5min",
+          "category": "",
           "raw_data_resolution": null
         }
       ],
       "kind": "operational",
       "name": "domain_0",
-      "package_id": "636900187ad08c50ec9298f2",
+      "package_id": "63d78519d25ab150213bc18d",
       "project": "123",
       "scope": "test"
     }
   ],
   "models": {
-    "636900187ad08c50ec9298f3": {
+    "63d78519d25ab150213bc18e": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -40,12 +48,12 @@
         "name": "model_0"
       },
       "coordinates": {
-        "x": 115.00000000000011,
-        "y": 96.66666666666666
+        "x": 42,
+        "y": 101
       },
       "is_collapsed": false,
-      "package_id": "636900187ad08c50ec9298f2",
-      "package_obj_id": "636900187ad08c50ec9298f2",
+      "package_id": "63d78519d25ab150213bc18d",
+      "package_obj_id": "63d78519d25ab150213bc18d",
       "project": "123",
       "relations": {
         "in_scope_of": null,
@@ -53,26 +61,23 @@
       },
       "scope": "test",
       "template_id": "1",
-      "id": "636900187ad08c50ec9298f3",
+      "id": "63d78519d25ab150213bc18e",
       "domains": [],
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "636900187ad08c50ec9298f5",
-          "coordinates": {
-            "x": 221.66666666666663,
-            "y": -24.1666666666666
-          },
+          "_id": "63d78519d25ab150213bc190",
           "is_collapsed": false,
-          "key": "instance_0",
-          "model_id": "636900187ad08c50ec9298f3",
-          "package_id": "636900187ad08c50ec9298f2",
+          "key": "instance0",
+          "model_id": "63d78519d25ab150213bc18e",
+          "package_id": "63d78519d25ab150213bc18d",
           "project": "123",
           "relations": {}
         }
-      ]
+      ],
+      "models_3d": []
     },
-    "636900187ad08c50ec9298f4": {
+    "63d78519d25ab150213bc18f": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -86,37 +91,50 @@
         "name": "model_1"
       },
       "coordinates": {
-        "x": 253.3333333333336,
-        "y": 310.0000000000001
+        "x": 328,
+        "y": 325
       },
+      "encrypted": false,
       "is_collapsed": false,
-      "package_id": "636900187ad08c50ec9298f2",
-      "package_obj_id": "636900187ad08c50ec9298f2",
+      "package_id": "63d78519d25ab150213bc18d",
+      "package_obj_id": "63d78519d25ab150213bc18d",
       "project": "123",
       "relations": {
-        "in_scope_of": "636900187ad08c50ec9298f3",
+        "in_scope_of": "63d78519d25ab150213bc18e",
         "in_sub_class_of": []
       },
       "scope": "test",
+      "skeleton": "from digital_machine import *\nfrom digital_machine.templates import simple\nfrom digital_machine.templates import templates as t\n\nclass model_1(simple.SimpleClassTemplate):\n  \n  \n  @t.input(\n    features={\n      'group_test': {\n        'group': 'domain_0.group_0',\n        'aggregation': '5s',\n        'aggregation_func': 'avg'\n      }\n    }  \n  )\n  @t.output(\n    features={\n      'output': {\n        'metric': 'domain_0.output',\n        'aggregation': '5s',\n        'aggregation_func': 'avg'\n      }\n    }\n  )\n  def model_yv(self, input, output):\n    print('model_yv invoked with inputs: ', input.data)\n    print('model_yv invoked with outputs: ', output.data)\n    \n    output.data['output'] = input.data['group_test']['group_0']\n    ",
       "template_id": "1",
-      "id": "636900187ad08c50ec9298f4",
+      "id": "63d78519d25ab150213bc18f",
       "domains": [
         {
-          "_id": "636900187ad08c50ec9298f8",
+          "_id": "63d78519d25ab150213bc194",
           "columns": [
             {
-              "id": "tensor"
+              "id": "item",
+              "child_id": "group_0_1",
+              "group": "group_0"
             },
             {
-              "id": "tensor",
-              "child_id": "tensor_0"
+              "id": "item",
+              "child_id": "group_0_2",
+              "group": "group_0"
+            },
+            {
+              "id": "item",
+              "child_id": "group_0_3",
+              "group": "group_0"
+            },
+            {
+              "id": "output"
             }
           ],
           "kind": "operational",
-          "model_id": "636900187ad08c50ec9298f4",
+          "model_id": "63d78519d25ab150213bc18f",
           "name": "domain_0",
-          "package_id": "636900187ad08c50ec9298f2",
-          "parent_id": "636900187ad08c50ec9298f7",
+          "package_id": "63d78519d25ab150213bc18d",
+          "parent_id": "63d78519d25ab150213bc193",
           "project": "123",
           "scope": "test"
         }
@@ -124,60 +142,25 @@
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "636900187ad08c50ec9298f6",
+          "_id": "63d78519d25ab150213bc191",
           "coordinates": {
-            "x": 348.33333333333337,
-            "y": 105.83333333333351
+            "x": 136.888916015625,
+            "y": 271.11114501953125
           },
           "is_collapsed": false,
-          "key": "instance_1",
-          "model_id": "636900187ad08c50ec9298f4",
-          "package_id": "636900187ad08c50ec9298f2",
+          "key": "instance1",
+          "model_id": "63d78519d25ab150213bc18f",
+          "package_id": "63d78519d25ab150213bc18d",
           "project": "123",
-          "scope": "instance_0",
+          "scope": "instance0",
           "shift_slot_id": null,
           "relations": {}
         }
-      ]
+      ],
+      "models_3d": []
     }
   },
-  "edge_upload_mapping": {
-    "map": {
-      "modbus|device1": [
-        {
-          "data_point": "variable1",
-          "metrics": [
-            {
-              "instance_key": "instance_1",
-              "domain": "domain_0",
-              "metric": "tensor"
-            }
-          ]
-        },
-        {
-          "data_point": "variable2"
-        },
-        {
-          "data_point": "variable3"
-        },
-        {
-          "data_point": "variable4"
-        },
-        {
-          "data_point": "variable5"
-        },
-        {
-          "data_point": "variable7"
-        },
-        {
-          "data_point": "variable8"
-        },
-        {
-          "data_point": "variable6"
-        }
-      ]
-    }
-  },
+  "edge_upload_mapping": {},
   "command_mapping": {},
   "authorization": {
     "functions": [],
@@ -187,16 +170,16 @@
   "categories": [],
   "keys": [
     {
-      "_id": "636900187ad08c50ec9298f0",
+      "_id": "63d78519d25ab150213bc18b",
       "key": "key_0",
-      "package_id": "636900187ad08c50ec9298f2",
+      "package_id": "63d78519d25ab150213bc18d",
       "project": "123",
       "scope": "test"
     },
     {
-      "_id": "636900187ad08c50ec9298f1",
+      "_id": "63d78519d25ab150213bc18c",
       "key": "key_1",
-      "package_id": "636900187ad08c50ec9298f2",
+      "package_id": "63d78519d25ab150213bc18d",
       "project": "123",
       "scope": "test"
     }

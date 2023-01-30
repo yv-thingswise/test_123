@@ -1,0 +1,91 @@
+{
+  "{package_0}model_0": {
+    "template": {
+      "scope": "{{scope}}",
+      "mixins": {
+        "Lookup": {
+          "class": "{package_0}model_0",
+          "key_0": "{{keys.0}}"
+        }
+      },
+      "groups": [
+        {
+          "id": "Admin",
+          "name": {
+            "i18n": {
+              "zh-CN": "管理员",
+              "en-US": "Administrator"
+            }
+          },
+          "permissions": {
+            "{{fullKey}}": [
+              "READ:*",
+              "WRITE:*",
+              "yoi:_admin"
+            ]
+          }
+        },
+        {
+          "id": "User",
+          "name": {
+            "i18n": {
+              "zh-CN": "用户",
+              "en-US": "User"
+            }
+          },
+          "permissions": {
+            "{{fullKey}}": [
+              "READ:*"
+            ]
+          }
+        }
+      ]
+    },
+    "level": 0
+  },
+  "{package_0}model_1": {
+    "template": {
+      "scope": "{{scope}}",
+      "mixins": {
+        "Lookup": {
+          "class": "{package_0}model_1",
+          "key_1": "{{keys.1}}",
+          "key_0": "{{keys.0}}"
+        }
+      },
+      "groups": [
+        {
+          "id": "Admin",
+          "name": {
+            "i18n": {
+              "zh-CN": "管理员",
+              "en-US": "Administrator"
+            }
+          },
+          "permissions": {
+            "{{fullKey}}": [
+              "READ:*",
+              "WRITE:*",
+              "yoi:_admin"
+            ]
+          }
+        },
+        {
+          "id": "User",
+          "name": {
+            "i18n": {
+              "zh-CN": "用户",
+              "en-US": "User"
+            }
+          },
+          "permissions": {
+            "{{fullKey}}": [
+              "READ:*"
+            ]
+          }
+        }
+      ]
+    },
+    "level": 1
+  }
+}

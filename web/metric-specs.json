@@ -1,8 +1,8 @@
 {
   "commandSpecs": {},
   "metricSpecs": {
-    "domain_0.tensor": {
-      "decimal": 1,
+    "domain_0.group_0_1": {
+      "decimal": 6,
       "default-stats": "avg",
       "hierarchy": [
         "key_0|key_1"
@@ -12,39 +12,40 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.tensor"
+          "en-US": "domain_0.group_0_1"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.tensor (domain_0)"
+          "en-US": "domain_0.group_0_1 (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.tensor"
+          "en-US": "domain_0.group_0_1"
         }
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
             "key_1": {
-              "periods": []
+              "periods": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ]
             }
           }
         }
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": {
-        "i18n": {
-          "en-US": ""
-        }
-      },
+      "unit": "",
       "valueType": "number:statistics"
     },
-    "domain_0.tensor_0": {
-      "decimal": 1,
+    "domain_0.group_0_2": {
+      "decimal": 6,
       "default-stats": "avg",
       "hierarchy": [
         "key_0|key_1"
@@ -54,35 +55,122 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.tensor_0"
+          "en-US": "domain_0.group_0_2"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.tensor_0 (domain_0)"
+          "en-US": "domain_0.group_0_2 (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.tensor_0"
+          "en-US": "domain_0.group_0_2"
         }
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
             "key_1": {
-              "periods": []
+              "periods": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ]
             }
           }
         }
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": {
+      "unit": "",
+      "valueType": "number:statistics"
+    },
+    "domain_0.group_0_3": {
+      "decimal": 6,
+      "default-stats": "avg",
+      "hierarchy": [
+        "key_0|key_1"
+      ],
+      "model": [
+        "{package_0}model_1"
+      ],
+      "name": {
         "i18n": {
-          "en-US": ""
+          "en-US": "domain_0.group_0_3"
         }
       },
+      "nameWithDomain": {
+        "i18n": {
+          "en-US": "domain_0.group_0_3 (domain_0)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "en-US": "domain_0.group_0_3"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "key_0": {
+            "key_1": {
+              "periods": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ]
+            }
+          }
+        }
+      },
+      "startOfDay": 0,
+      "timezone": "Europe/Moscow",
+      "unit": "",
+      "valueType": "number:statistics"
+    },
+    "domain_0.output": {
+      "decimal": 6,
+      "default-stats": "avg",
+      "hierarchy": [
+        "key_0|key_1"
+      ],
+      "model": [
+        "{package_0}model_1"
+      ],
+      "name": {
+        "i18n": {
+          "en-US": "domain_0.output"
+        }
+      },
+      "nameWithDomain": {
+        "i18n": {
+          "en-US": "domain_0.output (domain_0)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "en-US": "domain_0.output"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "key_0": {
+            "key_1": {
+              "periods": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ]
+            }
+          }
+        }
+      },
+      "startOfDay": 0,
+      "timezone": "Europe/Moscow",
+      "unit": "",
       "valueType": "number:statistics"
     }
   }

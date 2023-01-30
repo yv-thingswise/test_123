@@ -4,4 +4,28 @@ from digital_machine.templates import templates as t
 
 class model_1(simple.SimpleClassTemplate):
   
-  pass
+  
+  @t.input(
+    features={
+      'group_test': {
+        'group': 'domain_0.group_0',
+        'aggregation': '5s',
+        'aggregation_func': 'avg'
+      }
+    }  
+  )
+  @t.output(
+    features={
+      'output': {
+        'metric': 'domain_0.output',
+        'aggregation': '5s',
+        'aggregation_func': 'avg'
+      }
+    }
+  )
+  def model_yv(self, input, output):
+    print('model_yv invoked with inputs: ', input.data)
+    print('model_yv invoked with outputs: ', output.data)
+    
+    output.data['output'] = input.data['group_test']['group_0']
+    

@@ -21,6 +21,16 @@ spec:
   class: model_1
   fields:
   - category: []
+    name: Name
+    type: string
+  name: Basic
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: model_1
+  fields:
+  - category: []
     index: true
     name: key_0
     type: string
@@ -38,20 +48,54 @@ spec:
   fields:
   - aggregated: false
     category: []
-    decimals: 1
+    default_stats: avg
     kind: direct
-    name: domain_0.tensor
-    original_name: tensor
-    resolution: []
+    name: domain_0.group_0_1
+    original_name: group_0_1
+    resolution:
+    - 5s
+    - 15s
+    - 1min
+    - 5min
     timeseries: true
-    type: string
+    type: number
   - aggregated: false
     category: []
-    decimals: 1
+    default_stats: avg
     kind: direct
-    name: domain_0.tensor_0
-    original_name: tensor_0
-    resolution: []
+    name: domain_0.group_0_2
+    original_name: group_0_2
+    resolution:
+    - 5s
+    - 15s
+    - 1min
+    - 5min
     timeseries: true
-    type: string
+    type: number
+  - aggregated: false
+    category: []
+    default_stats: avg
+    kind: direct
+    name: domain_0.group_0_3
+    original_name: group_0_3
+    resolution:
+    - 5s
+    - 15s
+    - 1min
+    - 5min
+    timeseries: true
+    type: number
+  - aggregated: false
+    category: []
+    default_stats: avg
+    kind: direct
+    name: domain_0.output
+    original_name: output
+    resolution:
+    - 5s
+    - 15s
+    - 1min
+    - 5min
+    timeseries: true
+    type: number
   name: domain_0

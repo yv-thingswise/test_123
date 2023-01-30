@@ -1,5 +1,5 @@
 {
-  "domain_0.tensor": {
+  "domain_0.item": {
     "category": "",
     "name": {
       "i18n": {
@@ -13,10 +13,10 @@
         "en-US": null
       }
     },
-    "decimal": 1,
+    "decimal": null,
     "unit": null
   },
-  "domain_0.tensor_0": {
+  "domain_0.output": {
     "category": "",
     "name": {
       "i18n": {
@@ -30,7 +30,58 @@
         "en-US": null
       }
     },
-    "decimal": 1,
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.group_0_1": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.group_0_2": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.group_0_3": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
     "unit": null
   }
 }

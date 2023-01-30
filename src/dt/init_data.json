@@ -1,10 +1,18 @@
 {
-  "instance_0": {
+  "instance0": {
     "scope": "",
     "mixins": {
+      "package_0___model_0__Basic": {
+        "Name": {
+          "i18n": {
+            "en-US": "",
+            "zh-CN": ""
+          }
+        }
+      },
       "Lookup": {
         "class": "{package_0}model_0",
-        "key_0": "instance_0"
+        "key_0": "instance0"
       }
     },
     "groups": [
@@ -17,7 +25,7 @@
           }
         },
         "permissions": {
-          "instance_0": [
+          "instance0": [
             "READ:*",
             "WRITE:*",
             "yoi:_admin"
@@ -33,20 +41,28 @@
           }
         },
         "permissions": {
-          "instance_0": [
+          "instance0": [
             "READ:*"
           ]
         }
       }
     ]
   },
-  "instance_0|instance_1": {
-    "scope": "instance_0",
+  "instance0|instance1": {
+    "scope": "instance0",
     "mixins": {
+      "package_0___model_1__Basic": {
+        "Name": {
+          "i18n": {
+            "en-US": "",
+            "zh-CN": ""
+          }
+        }
+      },
       "Lookup": {
         "class": "{package_0}model_1",
-        "key_1": "instance_1",
-        "key_0": "instance_0"
+        "key_1": "instance1",
+        "key_0": "instance0"
       }
     },
     "groups": [
@@ -59,7 +75,7 @@
           }
         },
         "permissions": {
-          "instance_0|instance_1": [
+          "instance0|instance1": [
             "READ:*",
             "WRITE:*",
             "yoi:_admin"
@@ -75,7 +91,7 @@
           }
         },
         "permissions": {
-          "instance_0|instance_1": [
+          "instance0|instance1": [
             "READ:*"
           ]
         }

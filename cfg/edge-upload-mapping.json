@@ -1,48 +1,4 @@
 {
   "version": 2,
-  "groups": {
-    "map": {
-      "modbus|device1": [
-        {
-          "dataPoint": "variable1",
-          "digitalTwinMetrics": [
-            {
-              "instance": "instance_0|instance_1",
-              "instanceKey": "key_0|key_1",
-              "domain": "package_0___model_1__domain_0",
-              "metric": "tensor"
-            }
-          ]
-        },
-        {
-          "dataPoint": "variable2",
-          "digitalTwinMetrics": []
-        },
-        {
-          "dataPoint": "variable3",
-          "digitalTwinMetrics": []
-        },
-        {
-          "dataPoint": "variable4",
-          "digitalTwinMetrics": []
-        },
-        {
-          "dataPoint": "variable5",
-          "digitalTwinMetrics": []
-        },
-        {
-          "dataPoint": "variable7",
-          "digitalTwinMetrics": []
-        },
-        {
-          "dataPoint": "variable8",
-          "digitalTwinMetrics": []
-        },
-        {
-          "dataPoint": "variable6",
-          "digitalTwinMetrics": []
-        }
-      ]
-    }
-  }
+  "groups": {}
 }

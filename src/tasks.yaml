@@ -1,6 +1,4 @@
-packages:
-- package_0
-tasks:
+---
 - cron: 1 2 3 * * *
   enabled: 'yes'
   max_running_time: 60

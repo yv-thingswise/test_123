@@ -38,6 +38,18 @@
       ],
       "operational_domains": {},
       "primary_domains": {
+        "Basic": {
+          "fields": [
+            {
+              "category": [],
+              "index": false,
+              "name": "Name",
+              "type": "string"
+            }
+          ],
+          "kind": "metadata",
+          "mangled_name": "package_0___model_0__Basic"
+        },
         "Lookup": {
           "fields": [
             {
@@ -76,34 +88,92 @@
             {
               "aggregated": false,
               "category": [],
-              "decimals": 1,
+              "default_stats": "avg",
               "index": false,
               "kind": "direct",
-              "name": "domain_0.tensor",
-              "original_name": "tensor",
+              "name": "domain_0.group_0_1",
+              "original_name": "group_0_1",
               "policy": "drop-field",
-              "resolution": [],
+              "resolution": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ],
               "timeseries": true,
-              "type": "string"
+              "type": "number"
             },
             {
               "aggregated": false,
               "category": [],
-              "decimals": 1,
+              "default_stats": "avg",
               "index": false,
               "kind": "direct",
-              "name": "domain_0.tensor_0",
-              "original_name": "tensor_0",
+              "name": "domain_0.group_0_2",
+              "original_name": "group_0_2",
               "policy": "drop-field",
-              "resolution": [],
+              "resolution": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ],
               "timeseries": true,
-              "type": "string"
+              "type": "number"
+            },
+            {
+              "aggregated": false,
+              "category": [],
+              "default_stats": "avg",
+              "index": false,
+              "kind": "direct",
+              "name": "domain_0.group_0_3",
+              "original_name": "group_0_3",
+              "policy": "drop-field",
+              "resolution": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ],
+              "timeseries": true,
+              "type": "number"
+            },
+            {
+              "aggregated": false,
+              "category": [],
+              "default_stats": "avg",
+              "index": false,
+              "kind": "direct",
+              "name": "domain_0.output",
+              "original_name": "output",
+              "policy": "drop-field",
+              "resolution": [
+                "5s",
+                "15s",
+                "1min",
+                "5min"
+              ],
+              "timeseries": true,
+              "type": "number"
             }
           ],
           "mangled_name": "package_0___model_1__domain_0"
         }
       },
       "primary_domains": {
+        "Basic": {
+          "fields": [
+            {
+              "category": [],
+              "index": false,
+              "name": "Name",
+              "type": "string"
+            }
+          ],
+          "kind": "metadata",
+          "mangled_name": "package_0___model_1__Basic"
+        },
         "Lookup": {
           "fields": [
             {

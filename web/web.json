@@ -1,9 +1,10 @@
 {
   "brandImagePath": "logo.png",
-  "defaultGeo": "instance_0",
+  "defaultGeo": "instance0",
   "defaultLanguage": "zh-CN",
   "designSpecsPath": "design.json",
   "faviconPath": "favicon.png",
+  "initByClassPath": "init_by_class.json",
   "languages": {
     "en-US": "English",
     "zh-CN": "\u7b80\u4f53\u4e2d\u6587"
