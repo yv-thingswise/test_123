@@ -1,6 +1,50 @@
 {
   "commandSpecs": {},
   "metricSpecs": {
+    "domain_0.group_0": {
+      "decimal": 2,
+      "default-stats": "avg",
+      "hierarchy": [
+        "key_0|key_1"
+      ],
+      "model": [
+        "{package_0}model_1"
+      ],
+      "name": {
+        "i18n": {
+          "en-US": "domain_0.group_0"
+        }
+      },
+      "nameWithDomain": {
+        "i18n": {
+          "en-US": "domain_0.group_0 (domain_0)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "en-US": "domain_0.group_0"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "key_0": {
+            "key_1": {
+              "periods": [
+                "5s"
+              ]
+            }
+          }
+        }
+      },
+      "startOfDay": 0,
+      "timezone": "Europe/Moscow",
+      "unit": {
+        "i18n": {
+          "en-US": ""
+        }
+      },
+      "valueType": "number:statistics"
+    },
     "domain_0.group_0_1": {
       "decimal": 6,
       "default-stats": "avg",

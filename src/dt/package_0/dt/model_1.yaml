@@ -21,16 +21,6 @@ spec:
   class: model_1
   fields:
   - category: []
-    name: Name
-    type: string
-  name: Basic
----
-apiVersion: thingswise.com/v1
-kind: primaryDataDomain
-spec:
-  class: model_1
-  fields:
-  - category: []
     index: true
     name: key_0
     type: string
@@ -42,6 +32,16 @@ spec:
   name: Lookup
 ---
 apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: model_1
+  fields:
+  - category: []
+    name: Name
+    type: string
+  name: Basic
+---
+apiVersion: thingswise.com/v1
 kind: operationalDataDomain
 spec:
   class: model_1
@@ -49,6 +49,7 @@ spec:
   - aggregated: false
     category: []
     default_stats: avg
+    group: group_0
     kind: direct
     name: domain_0.group_0_1
     original_name: group_0_1
@@ -62,6 +63,7 @@ spec:
   - aggregated: false
     category: []
     default_stats: avg
+    group: group_0
     kind: direct
     name: domain_0.group_0_2
     original_name: group_0_2
@@ -75,6 +77,7 @@ spec:
   - aggregated: false
     category: []
     default_stats: avg
+    group: group_0
     kind: direct
     name: domain_0.group_0_3
     original_name: group_0_3

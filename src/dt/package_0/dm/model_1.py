@@ -4,7 +4,7 @@ from digital_machine.templates import templates as t
 
 class model_1(simple.SimpleClassTemplate):
   
-  
+  @t.model(invocation_frequency='5s')
   @t.input(
     features={
       'group_test': {
