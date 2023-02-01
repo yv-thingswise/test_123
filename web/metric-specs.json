@@ -4,6 +4,7 @@
     "domain_0.group_0": {
       "decimal": 2,
       "default-stats": "avg",
+      "group": "group_0",
       "hierarchy": [
         "key_0|key_1"
       ],
@@ -48,6 +49,7 @@
     "domain_0.group_0_1": {
       "decimal": 6,
       "default-stats": "avg",
+      "group": "group_0",
       "hierarchy": [
         "key_0|key_1"
       ],
@@ -91,6 +93,7 @@
     "domain_0.group_0_2": {
       "decimal": 6,
       "default-stats": "avg",
+      "group": "group_0",
       "hierarchy": [
         "key_0|key_1"
       ],
@@ -134,6 +137,7 @@
     "domain_0.group_0_3": {
       "decimal": 6,
       "default-stats": "avg",
+      "group": "group_0",
       "hierarchy": [
         "key_0|key_1"
       ],
@@ -177,6 +181,7 @@
     "domain_0.output": {
       "decimal": 6,
       "default-stats": "avg",
+      "group": null,
       "hierarchy": [
         "key_0|key_1"
       ],
