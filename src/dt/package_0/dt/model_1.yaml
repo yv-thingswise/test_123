@@ -92,6 +92,9 @@ spec:
     category: []
     default_stats: avg
     kind: direct
+    label:
+      i18n:
+        en-US: eng label
     name: domain_0.output
     original_name: output
     resolution:

@@ -1,11 +1,11 @@
 {
-  "_id": "63da20d8f8fa8dfb1fc42ed7",
+  "_id": "63dba7c941dc6abcc75a735a",
   "name": "package_0",
   "project": "123",
   "scope": "test",
   "domains": [
     {
-      "_id": "63da20d8f8fa8dfb1fc42edd",
+      "_id": "63dba7c941dc6abcc75a7360",
       "columns": [
         {
           "id": "item",
@@ -28,13 +28,13 @@
       ],
       "kind": "operational",
       "name": "domain_0",
-      "package_id": "63da20d8f8fa8dfb1fc42ed7",
+      "package_id": "63dba7c941dc6abcc75a735a",
       "project": "123",
       "scope": "test"
     }
   ],
   "models": {
-    "63da20d8f8fa8dfb1fc42ed8": {
+    "63dba7c941dc6abcc75a735b": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -52,8 +52,8 @@
         "y": 101
       },
       "is_collapsed": false,
-      "package_id": "63da20d8f8fa8dfb1fc42ed7",
-      "package_obj_id": "63da20d8f8fa8dfb1fc42ed7",
+      "package_id": "63dba7c941dc6abcc75a735a",
+      "package_obj_id": "63dba7c941dc6abcc75a735a",
       "project": "123",
       "relations": {
         "in_scope_of": null,
@@ -61,23 +61,23 @@
       },
       "scope": "test",
       "template_id": "1",
-      "id": "63da20d8f8fa8dfb1fc42ed8",
+      "id": "63dba7c941dc6abcc75a735b",
       "domains": [],
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "63da20d8f8fa8dfb1fc42eda",
+          "_id": "63dba7c941dc6abcc75a735d",
           "is_collapsed": false,
           "key": "instance0",
-          "model_id": "63da20d8f8fa8dfb1fc42ed8",
-          "package_id": "63da20d8f8fa8dfb1fc42ed7",
+          "model_id": "63dba7c941dc6abcc75a735b",
+          "package_id": "63dba7c941dc6abcc75a735a",
           "project": "123",
           "relations": {}
         }
       ],
       "models_3d": []
     },
-    "63da20d8f8fa8dfb1fc42ed9": {
+    "63dba7c941dc6abcc75a735c": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -96,20 +96,20 @@
       },
       "encrypted": false,
       "is_collapsed": false,
-      "package_id": "63da20d8f8fa8dfb1fc42ed7",
-      "package_obj_id": "63da20d8f8fa8dfb1fc42ed7",
+      "package_id": "63dba7c941dc6abcc75a735a",
+      "package_obj_id": "63dba7c941dc6abcc75a735a",
       "project": "123",
       "relations": {
-        "in_scope_of": "63da20d8f8fa8dfb1fc42ed8",
+        "in_scope_of": "63dba7c941dc6abcc75a735b",
         "in_sub_class_of": []
       },
       "scope": "test",
       "skeleton": "from digital_machine import *\nfrom digital_machine.templates import simple\nfrom digital_machine.templates import templates as t\n\nclass model_1(simple.SimpleClassTemplate):\n  \n  @t.model(invocation_frequency='5s')\n  @t.input(\n    features={\n      'group_test': {\n        'group': 'domain_0.group_0',\n        'aggregation': '5s',\n        'aggregation_func': 'avg'\n      }\n    }  \n  )\n  @t.output(\n    features={\n      'output': {\n        'metric': 'domain_0.output',\n        'aggregation': '5s',\n        'aggregation_func': 'avg'\n      }\n    }\n  )\n  def model_yv(self, input, output):\n    print('model_yv invoked with inputs: ', input.data)\n    print('model_yv invoked with outputs: ', output.data)\n    \n    output.data['output'] = input.data['group_test']['group_0']\n    ",
       "template_id": "1",
-      "id": "63da20d8f8fa8dfb1fc42ed9",
+      "id": "63dba7c941dc6abcc75a735c",
       "domains": [
         {
-          "_id": "63da20d8f8fa8dfb1fc42ede",
+          "_id": "63dba7c941dc6abcc75a7361",
           "columns": [
             {
               "id": "item",
@@ -127,14 +127,19 @@
               "group": "group_0"
             },
             {
-              "id": "output"
+              "id": "output",
+              "label": {
+                "i18n": {
+                  "en-us": "eng label"
+                }
+              }
             }
           ],
           "kind": "operational",
-          "model_id": "63da20d8f8fa8dfb1fc42ed9",
+          "model_id": "63dba7c941dc6abcc75a735c",
           "name": "domain_0",
-          "package_id": "63da20d8f8fa8dfb1fc42ed7",
-          "parent_id": "63da20d8f8fa8dfb1fc42edd",
+          "package_id": "63dba7c941dc6abcc75a735a",
+          "parent_id": "63dba7c941dc6abcc75a7360",
           "project": "123",
           "scope": "test"
         }
@@ -142,15 +147,15 @@
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "63da20d8f8fa8dfb1fc42edb",
+          "_id": "63dba7c941dc6abcc75a735e",
           "coordinates": {
             "x": 136.888916015625,
             "y": 271.11114501953125
           },
           "is_collapsed": false,
           "key": "instance1",
-          "model_id": "63da20d8f8fa8dfb1fc42ed9",
-          "package_id": "63da20d8f8fa8dfb1fc42ed7",
+          "model_id": "63dba7c941dc6abcc75a735c",
+          "package_id": "63dba7c941dc6abcc75a735a",
           "project": "123",
           "scope": "instance0",
           "shift_slot_id": null,
@@ -170,16 +175,16 @@
   "categories": [],
   "keys": [
     {
-      "_id": "63da20d8f8fa8dfb1fc42ed5",
+      "_id": "63dba7c941dc6abcc75a7358",
       "key": "key_0",
-      "package_id": "63da20d8f8fa8dfb1fc42ed7",
+      "package_id": "63dba7c941dc6abcc75a735a",
       "project": "123",
       "scope": "test"
     },
     {
-      "_id": "63da20d8f8fa8dfb1fc42ed6",
+      "_id": "63dba7c941dc6abcc75a7359",
       "key": "key_1",
-      "package_id": "63da20d8f8fa8dfb1fc42ed7",
+      "package_id": "63dba7c941dc6abcc75a735a",
       "project": "123",
       "scope": "test"
     }

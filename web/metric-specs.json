@@ -190,17 +190,17 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.output"
+          "en-US": "eng label"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.output (domain_0)"
+          "en-US": "eng label (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.output"
+          "en-US": "eng label"
         }
       },
       "querySpecs": {
