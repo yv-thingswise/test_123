@@ -166,6 +166,14 @@
               "type": "number"
             }
           ],
+          "groups": [
+            {
+              "label": {
+                "i18n": {}
+              },
+              "name": "domain_0.group_0"
+            }
+          ],
           "mangled_name": "package_0___model_1__domain_0"
         }
       },

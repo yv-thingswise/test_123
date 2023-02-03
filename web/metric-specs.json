@@ -11,27 +11,24 @@
       "model": [
         "{package_0}model_1"
       ],
-      "name": {
-        "i18n": {
-          "en-US": "domain_0.group_0"
-        }
-      },
+      "name": "domain_0.group_0",
       "nameWithDomain": {
         "i18n": {
           "en-US": "domain_0.group_0 (domain_0)"
         }
       },
       "note": {
-        "i18n": {
-          "en-US": "domain_0.group_0"
-        }
+        "i18n": {}
       },
       "querySpecs": {
         "timeseries": {
           "key_0": {
             "key_1": {
               "periods": [
-                "5s"
+                "5s",
+                "15s",
+                "1min",
+                "5min"
               ]
             }
           }
