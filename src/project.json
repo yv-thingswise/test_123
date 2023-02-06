@@ -96,14 +96,14 @@
   },
   "time_zone": "Europe/Moscow",
   "packages": {
-    "63e0ef9b4d2117188ccf5e5d": {
+    "63e0ffc190752d1ca25d37c0": {
       "name": "package_0",
       "project": "123",
       "scope": "test",
       "domains": [
         {
           "_id": {
-            "$oid": "63e0ef9b4d2117188ccf5e63"
+            "$oid": "63e0ffc190752d1ca25d37c6"
           },
           "columns": [
             {
@@ -127,14 +127,14 @@
           ],
           "kind": "operational",
           "name": "domain_0",
-          "package_id": "63e0ef9b4d2117188ccf5e5d",
+          "package_id": "63e0ffc190752d1ca25d37c0",
           "project": "123",
           "scope": "test",
           "groups": []
         }
       ],
       "models": {
-        "63e0ef9b4d2117188ccf5e5e": {
+        "63e0ffc190752d1ca25d37c1": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -152,9 +152,9 @@
             "y": 101
           },
           "is_collapsed": false,
-          "package_id": "63e0ef9b4d2117188ccf5e5d",
+          "package_id": "63e0ffc190752d1ca25d37c0",
           "package_obj_id": {
-            "$oid": "63e0ef9b4d2117188ccf5e5d"
+            "$oid": "63e0ffc190752d1ca25d37c0"
           },
           "project": "123",
           "relations": {
@@ -163,25 +163,25 @@
           },
           "scope": "test",
           "template_id": "1",
-          "id": "63e0ef9b4d2117188ccf5e5e",
+          "id": "63e0ffc190752d1ca25d37c1",
           "domains": [],
           "timezone": "Europe/Moscow",
           "instances": [
             {
               "_id": {
-                "$oid": "63e0ef9b4d2117188ccf5e60"
+                "$oid": "63e0ffc190752d1ca25d37c3"
               },
               "is_collapsed": false,
               "key": "instance0",
-              "model_id": "63e0ef9b4d2117188ccf5e5e",
-              "package_id": "63e0ef9b4d2117188ccf5e5d",
+              "model_id": "63e0ffc190752d1ca25d37c1",
+              "package_id": "63e0ffc190752d1ca25d37c0",
               "project": "123",
               "relations": {}
             }
           ],
           "models_3d": []
         },
-        "63e0ef9b4d2117188ccf5e5f": {
+        "63e0ffc190752d1ca25d37c2": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -200,23 +200,23 @@
           },
           "encrypted": false,
           "is_collapsed": false,
-          "package_id": "63e0ef9b4d2117188ccf5e5d",
+          "package_id": "63e0ffc190752d1ca25d37c0",
           "package_obj_id": {
-            "$oid": "63e0ef9b4d2117188ccf5e5d"
+            "$oid": "63e0ffc190752d1ca25d37c0"
           },
           "project": "123",
           "relations": {
-            "in_scope_of": "63e0ef9b4d2117188ccf5e5e",
+            "in_scope_of": "63e0ffc190752d1ca25d37c1",
             "in_sub_class_of": []
           },
           "scope": "test",
           "skeleton": "from digital_machine import *\nfrom digital_machine.templates import simple\nfrom digital_machine.templates import templates as t\n\nclass model_1(simple.SimpleClassTemplate):\n  \n  @t.model(invocation_frequency='5s')\n  @t.input(\n    features={\n      'group_test': {\n        'group': 'domain_0.group_0',\n        'aggregation': '5s',\n        'aggregation_func': 'avg'\n      }\n    }  \n  )\n  @t.output(\n    features={\n      'output': {\n        'metric': 'domain_0.output',\n        'aggregation': '5s',\n        'aggregation_func': 'avg'\n      }\n    }\n  )\n  def model_yv(self, input, output):\n    print('model_yv invoked with inputs: ', input.data)\n    print('model_yv invoked with outputs: ', output.data)\n    \n    output.data['output'] = input.data['group_test']['group_0']\n    ",
           "template_id": "1",
-          "id": "63e0ef9b4d2117188ccf5e5f",
+          "id": "63e0ffc190752d1ca25d37c2",
           "domains": [
             {
               "_id": {
-                "$oid": "63e0ef9b4d2117188ccf5e64"
+                "$oid": "63e0ffc190752d1ca25d37c7"
               },
               "columns": [
                 {
@@ -244,20 +244,20 @@
                 }
               ],
               "kind": "operational",
-              "model_id": "63e0ef9b4d2117188ccf5e5f",
+              "model_id": "63e0ffc190752d1ca25d37c2",
               "name": "domain_0",
-              "package_id": "63e0ef9b4d2117188ccf5e5d",
-              "parent_id": "63e0ef9b4d2117188ccf5e63",
+              "package_id": "63e0ffc190752d1ca25d37c0",
+              "parent_id": "63e0ffc190752d1ca25d37c6",
               "project": "123",
               "scope": "test",
               "groups": [
                 {
                   "_id": {
-                    "$oid": "63e0ef9b4d2117188ccf5f7a"
+                    "$oid": "63e0ffc190752d1ca25d38dd"
                   },
-                  "domain_id": "63e0ef9b4d2117188ccf5e64",
+                  "domain_id": "63e0ffc190752d1ca25d37c7",
                   "id_": "group_0",
-                  "package_id": "63e0ef9b4d2117188ccf5e5d",
+                  "package_id": "63e0ffc190752d1ca25d37c0",
                   "project": "123",
                   "scope": "test"
                 }
@@ -268,7 +268,7 @@
           "instances": [
             {
               "_id": {
-                "$oid": "63e0ef9b4d2117188ccf5e61"
+                "$oid": "63e0ffc190752d1ca25d37c4"
               },
               "coordinates": {
                 "x": 136.888916015625,
@@ -276,8 +276,8 @@
               },
               "is_collapsed": false,
               "key": "instance1",
-              "model_id": "63e0ef9b4d2117188ccf5e5f",
-              "package_id": "63e0ef9b4d2117188ccf5e5d",
+              "model_id": "63e0ffc190752d1ca25d37c2",
+              "package_id": "63e0ffc190752d1ca25d37c0",
               "project": "123",
               "scope": "instance0",
               "shift_slot_id": null,
@@ -298,25 +298,25 @@
       "keys": [
         {
           "_id": {
-            "$oid": "63e0ef9b4d2117188ccf5e5b"
+            "$oid": "63e0ffc190752d1ca25d37be"
           },
           "key": "key_0",
-          "package_id": "63e0ef9b4d2117188ccf5e5d",
+          "package_id": "63e0ffc190752d1ca25d37c0",
           "project": "123",
           "scope": "test"
         },
         {
           "_id": {
-            "$oid": "63e0ef9b4d2117188ccf5e5c"
+            "$oid": "63e0ffc190752d1ca25d37bf"
           },
           "key": "key_1",
-          "package_id": "63e0ef9b4d2117188ccf5e5d",
+          "package_id": "63e0ffc190752d1ca25d37c0",
           "project": "123",
           "scope": "test"
         }
       ],
       "shift_schedules": [],
-      "id": "63e0ef9b4d2117188ccf5e5d"
+      "id": "63e0ffc190752d1ca25d37c0"
     }
   }
 }
