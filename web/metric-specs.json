@@ -25,9 +25,9 @@
           "key_0": {
             "key_1": {
               "periods": [
+                "1min",
                 "5s",
                 "15s",
-                "1min",
                 "5min"
               ]
             }

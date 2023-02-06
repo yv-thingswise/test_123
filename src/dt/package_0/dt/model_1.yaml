@@ -21,6 +21,16 @@ spec:
   class: model_1
   fields:
   - category: []
+    name: Name
+    type: string
+  name: Basic
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: model_1
+  fields:
+  - category: []
     index: true
     name: key_0
     type: string
@@ -30,16 +40,6 @@ spec:
     type: string
   kind: lookup
   name: Lookup
----
-apiVersion: thingswise.com/v1
-kind: primaryDataDomain
-spec:
-  class: model_1
-  fields:
-  - category: []
-    name: Name
-    type: string
-  name: Basic
 ---
 apiVersion: thingswise.com/v1
 kind: operationalDataDomain
