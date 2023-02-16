@@ -1,9 +1,0 @@
----
-- cron: 1 2 3 * * *
-  enabled: 'yes'
-  max_running_time: 60
-  module: package_0.task0
-  name: task0_0
-  no_binary_store: false
-  no_digital_twin: false
-  no_exporter: false

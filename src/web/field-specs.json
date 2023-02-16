@@ -1,5 +1,90 @@
 {
-  "domain_0.item": {
+  "domain_0.real_value": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.string_value": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.ceiling": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.floor": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.string": {
+    "category": "",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "domain_0.string1": {
     "category": "",
     "name": {
       "i18n": {
@@ -17,57 +102,6 @@
     "unit": null
   },
   "domain_0.output": {
-    "category": "",
-    "name": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "note": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "decimal": null,
-    "unit": null
-  },
-  "domain_0.group_0_1": {
-    "category": "",
-    "name": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "note": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "decimal": null,
-    "unit": null
-  },
-  "domain_0.group_0_2": {
-    "category": "",
-    "name": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "note": {
-      "i18n": {
-        "zh-CN": null,
-        "en-US": null
-      }
-    },
-    "decimal": null,
-    "unit": null
-  },
-  "domain_0.group_0_3": {
     "category": "",
     "name": {
       "i18n": {

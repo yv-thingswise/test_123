@@ -1,12 +1,12 @@
 {
-  "name": "instance0",
+  "name": "instance_0",
   "i18n": {
     "en-US": "",
     "zh-CN": ""
   },
   "key_1": {
-    "instance1": {
-      "name": "instance1",
+    "instance_1": {
+      "name": "instance_1",
       "i18n": {
         "en-US": "",
         "zh-CN": ""

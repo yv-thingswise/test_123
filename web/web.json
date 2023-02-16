@@ -1,6 +1,6 @@
 {
   "brandImagePath": "logo.png",
-  "defaultGeo": "instance0",
+  "defaultGeo": "instance_0",
   "defaultLanguage": "zh-CN",
   "designSpecsPath": "design.json",
   "faviconPath": "favicon.png",

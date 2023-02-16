@@ -21,16 +21,6 @@ spec:
   class: model_1
   fields:
   - category: []
-    name: Name
-    type: string
-  name: Basic
----
-apiVersion: thingswise.com/v1
-kind: primaryDataDomain
-spec:
-  class: model_1
-  fields:
-  - category: []
     index: true
     name: key_0
     type: string
@@ -42,6 +32,16 @@ spec:
   name: Lookup
 ---
 apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: model_1
+  fields:
+  - category: []
+    name: Name
+    type: string
+  name: Basic
+---
+apiVersion: thingswise.com/v1
 kind: operationalDataDomain
 spec:
   class: model_1
@@ -49,52 +49,59 @@ spec:
   - aggregated: false
     category: []
     default_stats: avg
-    group: group_0
+    group: temperature
     kind: direct
-    name: domain_0.group_0_1
-    original_name: group_0_1
+    name: domain_0.ceiling
+    original_name: ceiling
     resolution:
     - 5s
     - 15s
     - 1min
     - 5min
+    - 15min
     timeseries: true
     type: number
   - aggregated: false
     category: []
     default_stats: avg
-    group: group_0
+    group: temperature
     kind: direct
-    name: domain_0.group_0_2
-    original_name: group_0_2
+    name: domain_0.floor
+    original_name: floor
     resolution:
     - 5s
     - 15s
     - 1min
     - 5min
+    - 15min
     timeseries: true
     type: number
   - aggregated: false
     category: []
     default_stats: avg
-    group: group_0
+    group: string_group
     kind: direct
-    name: domain_0.group_0_3
-    original_name: group_0_3
-    resolution:
-    - 5s
-    - 15s
-    - 1min
-    - 5min
+    name: domain_0.string
+    original_name: string
+    raw_data_resolution: 5s
+    resolution: []
     timeseries: true
-    type: number
+    type: string
+  - aggregated: false
+    category: []
+    default_stats: avg
+    group: string_group
+    kind: direct
+    name: domain_0.string1
+    original_name: string1
+    raw_data_resolution: 5s
+    resolution: []
+    timeseries: true
+    type: string
   - aggregated: false
     category: []
     default_stats: avg
     kind: direct
-    label:
-      i18n:
-        en-US: eng label
     name: domain_0.output
     original_name: output
     resolution:
@@ -102,10 +109,14 @@ spec:
     - 15s
     - 1min
     - 5min
+    - 15min
     timeseries: true
     type: number
   groups:
   - label:
       i18n: {}
-    name: domain_0.group_0
+    name: domain_0.temperature
+  - label:
+      i18n: {}
+    name: domain_0.string_group
   name: domain_0
