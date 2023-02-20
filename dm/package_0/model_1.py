@@ -45,17 +45,18 @@ class model_1(simple.SimpleClassTemplate):
         
         # You can access group features like this. They will contain
         # each group item and aggregated value
-        print(input.data['temperature_test'])  # {'ceiling': 10, 'floor': 8, 'temperature': 9}
+        # print(input.data['temperature_test'])  # {'ceiling': 10, 'floor': 8, 'temperature': 9}
         
-        # Group added with source will have same values inside
-        print(input.data['source_temp'])  # {'ceiling': 10, 'floor': 8, 'temperature': 9}
+        # # Group added with source will have same values inside
+        # print(input.data['source_temp'])  # {'ceiling': 10, 'floor': 8, 'temperature': 9}
     
-        # Non numeric groups are also supported, but such groups won't
-        # contain aggregated value as it is not applicable
-        print(input.data['string_group'])  # {'string': 'test', 'string1': 'test'1}
+        # # Non numeric groups are also supported, but such groups won't
+        # # contain aggregated value as it is not applicable
+        # print(input.data['string_group'])  # {'string': 'test', 'string1': 'test'1}
     
-        # Group items accessed as usual
-        print(input.data['string'])  # 'test'
-        print(input.data['ceiling'])  # 10
+        # # Group items accessed as usual
+        # print(input.data['string'])  # 'test'
+        # print(input.data['ceiling'])  # 10
         
-        output.data['output_temperature'] = input.data['temperature_test']['temperature']
+        # output.data['output_temperature'] = input.data['temperature_test']['temperature']
+        pass
