@@ -97,7 +97,7 @@
   "time_zone": "Europe/Moscow",
   "source_code_encrypted": false,
   "packages": {
-    "63f3368df35cbe1348854b91": {
+    "641063ea2558e27523671f44": {
       "name": "package_0",
       "package_id": "63d2dfc7c85fbfa7415fe2d2",
       "project": "123",
@@ -105,38 +105,30 @@
       "domains": [
         {
           "_id": {
-            "$oid": "63f3368df35cbe1348854b96"
+            "$oid": "641063ea2558e27523671f49"
           },
           "columns": [
             {
-              "id": "real_value",
+              "id": "real",
               "type": "REAL",
               "default_aggregation": "avg",
               "field_type": "direct",
-              "resolution": "5s,15s,1min,5min,15min",
+              "resolution": "5s,15s,1min,5min,15min,1h,12h,1d",
               "category": "",
+              "decimals": 6,
               "raw_data_resolution": null
-            },
-            {
-              "id": "string_value",
-              "type": "STRING",
-              "default_aggregation": "avg",
-              "field_type": "direct",
-              "resolution": null,
-              "category": "",
-              "raw_data_resolution": "5s"
             }
           ],
           "kind": "operational",
           "name": "domain_0",
-          "package_id": "63f3368df35cbe1348854b91",
+          "package_id": "641063ea2558e27523671f44",
           "project": "123",
           "scope": "test",
           "groups": []
         }
       ],
       "models": {
-        "63f3368df35cbe1348854b92": {
+        "641063ea2558e27523671f45": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -150,14 +142,13 @@
             "name": "model_0"
           },
           "coordinates": {
-            "x": -12,
-            "y": -69
+            "x": -28,
+            "y": -73
           },
-          "encrypted": false,
           "is_collapsed": false,
-          "package_id": "63f3368df35cbe1348854b91",
+          "package_id": "641063ea2558e27523671f44",
           "package_obj_id": {
-            "$oid": "63f3368df35cbe1348854b91"
+            "$oid": "641063ea2558e27523671f44"
           },
           "project": "123",
           "relations": {
@@ -165,31 +156,30 @@
             "in_sub_class_of": []
           },
           "scope": "test",
-          "skeleton": "from digital_machine import *\nfrom digital_machine.templates import simple\nfrom digital_machine.templates import templates as t\n\n\nclass model_0(simple.SimpleClassTemplate):\n  \n  pass",
           "template_id": "1",
-          "id": "63f3368df35cbe1348854b92",
+          "id": "641063ea2558e27523671f45",
           "domains": [],
           "timezone": "Europe/Moscow",
           "instances": [
             {
               "_id": {
-                "$oid": "63f3368df35cbe1348854b94"
+                "$oid": "641063ea2558e27523671f47"
               },
               "coordinates": {
-                "x": -360,
-                "y": -26
+                "x": -20,
+                "y": -258
               },
               "is_collapsed": false,
               "key": "instance_0",
-              "model_id": "63f3368df35cbe1348854b92",
-              "package_id": "63f3368df35cbe1348854b91",
+              "model_id": "641063ea2558e27523671f45",
+              "package_id": "641063ea2558e27523671f44",
               "project": "123",
               "relations": {}
             }
           ],
           "models_3d": []
         },
-        "63f3368df35cbe1348854b93": {
+        "641063ea2558e27523671f46": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -203,100 +193,56 @@
             "name": "model_1"
           },
           "coordinates": {
-            "x": 384,
-            "y": 169
+            "x": 144,
+            "y": 145
           },
-          "encrypted": false,
           "is_collapsed": false,
-          "package_id": "63f3368df35cbe1348854b91",
+          "package_id": "641063ea2558e27523671f44",
           "package_obj_id": {
-            "$oid": "63f3368df35cbe1348854b91"
+            "$oid": "641063ea2558e27523671f44"
           },
           "project": "123",
           "relations": {
-            "in_scope_of": "63f3368df35cbe1348854b92",
+            "in_scope_of": "641063ea2558e27523671f45",
             "in_sub_class_of": []
           },
           "scope": "test",
-          "skeleton": "from digital_machine import *\nfrom digital_machine.templates import simple\nfrom digital_machine.templates import templates as t\n\nclass model_1(simple.SimpleClassTemplate):\n  \n    @t.model(invocation_frequency='5s')\n    @t.input(\n        features={\n            # You can access groups like this\n            'temperature_test': {\n                'group': 'domain_0.temperature',\n                'aggregation': '5s',\n                'aggregation_func': 'avg',\n            },\n            # You can also do it with source\n            'source_temp': {\n                'source': {\n                    'group': 'domain_0.temperature',\n                },\n                'interpolation': 'fill',\n            },\n            # Non numeric groups are aslo supported\n            'string_group': {'group': 'domain_0.string_group'},\n            # You also can access group items\n            'string_val': {'metric': 'domain_0.string',},\n            'ceiling': {\n                'metric': 'domain_0.ceiling',\n                'aggregation': '5s',\n                'aggregation_func': 'avg',\n            }\n        }\n    )\n    @t.output(\n        features={\n            # NOTE: group metrics cannot be used in output features\n            'output_temperature': {\n                'metric': 'domain_0.output',\n                'aggregation': '5s',\n                'aggregation_func': 'avg',\n            }\n        }\n    )\n    def model0(self, input, output):\n        \n        # You can access group features like this. They will contain\n        # each group item and aggregated value\n        # print(input.data['temperature_test'])  # {'ceiling': 10, 'floor': 8, 'temperature': 9}\n        \n        # # Group added with source will have same values inside\n        # print(input.data['source_temp'])  # {'ceiling': 10, 'floor': 8, 'temperature': 9}\n    \n        # # Non numeric groups are also supported, but such groups won't\n        # # contain aggregated value as it is not applicable\n        # print(input.data['string_group'])  # {'string': 'test', 'string1': 'test'1}\n    \n        # # Group items accessed as usual\n        # print(input.data['string'])  # 'test'\n        # print(input.data['ceiling'])  # 10\n        \n        # output.data['output_temperature'] = input.data['temperature_test']['temperature']\n        pass\n",
           "template_id": "1",
-          "id": "63f3368df35cbe1348854b93",
+          "id": "641063ea2558e27523671f46",
           "domains": [
             {
               "_id": {
-                "$oid": "63f3368df35cbe1348854b97"
+                "$oid": "641063ea2558e27523671f4a"
               },
               "columns": [
                 {
-                  "id": "real_value",
-                  "child_id": "ceiling",
-                  "group": "temperature"
-                },
-                {
-                  "id": "real_value",
-                  "child_id": "floor",
-                  "group": "temperature"
-                },
-                {
-                  "id": "string_value",
-                  "child_id": "string",
-                  "group": "string_group"
-                },
-                {
-                  "id": "string_value",
-                  "child_id": "string1",
-                  "group": "string_group"
-                },
-                {
-                  "id": "real_value",
-                  "child_id": "output"
+                  "id": "real"
                 }
               ],
               "kind": "operational",
-              "model_id": "63f3368df35cbe1348854b93",
+              "model_id": "641063ea2558e27523671f46",
               "name": "domain_0",
-              "package_id": "63f3368df35cbe1348854b91",
-              "parent_id": "63f3368df35cbe1348854b96",
+              "package_id": "641063ea2558e27523671f44",
+              "parent_id": "641063ea2558e27523671f49",
               "project": "123",
               "scope": "test",
-              "groups": [
-                {
-                  "_id": {
-                    "$oid": "63f3368df35cbe1348854ba0"
-                  },
-                  "domain_id": "63f3368df35cbe1348854b97",
-                  "id_": "temperature",
-                  "package_id": "63f3368df35cbe1348854b91",
-                  "project": "123",
-                  "scope": "test"
-                },
-                {
-                  "_id": {
-                    "$oid": "63f3368df35cbe1348854ba1"
-                  },
-                  "domain_id": "63f3368df35cbe1348854b97",
-                  "id_": "string_group",
-                  "package_id": "63f3368df35cbe1348854b91",
-                  "project": "123",
-                  "scope": "test"
-                }
-              ]
+              "groups": []
             }
           ],
           "timezone": "Europe/Moscow",
           "instances": [
             {
               "_id": {
-                "$oid": "63f3368df35cbe1348854b95"
+                "$oid": "641063ea2558e27523671f48"
               },
               "coordinates": {
-                "x": -255,
-                "y": 84
+                "x": 140,
+                "y": -148
               },
               "is_collapsed": false,
               "key": "instance_1",
-              "model_id": "63f3368df35cbe1348854b93",
-              "package_id": "63f3368df35cbe1348854b91",
+              "model_id": "641063ea2558e27523671f46",
+              "package_id": "641063ea2558e27523671f44",
               "project": "123",
               "scope": "instance_0",
               "shift_slot_id": null,
@@ -317,25 +263,25 @@
       "keys": [
         {
           "_id": {
-            "$oid": "63f3368df35cbe1348854b8f"
+            "$oid": "641063ea2558e27523671f42"
           },
           "key": "key_0",
-          "package_id": "63f3368df35cbe1348854b91",
+          "package_id": "641063ea2558e27523671f44",
           "project": "123",
           "scope": "test"
         },
         {
           "_id": {
-            "$oid": "63f3368df35cbe1348854b90"
+            "$oid": "641063ea2558e27523671f43"
           },
           "key": "key_1",
-          "package_id": "63f3368df35cbe1348854b91",
+          "package_id": "641063ea2558e27523671f44",
           "project": "123",
           "scope": "test"
         }
       ],
       "shift_schedules": [],
-      "id": "63f3368df35cbe1348854b91"
+      "id": "641063ea2558e27523671f44"
     }
   }
 }

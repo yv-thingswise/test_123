@@ -1,97 +1,7 @@
 {
   "commandSpecs": {},
   "metricSpecs": {
-    "domain_0.ceiling": {
-      "decimal": 6,
-      "default-stats": "avg",
-      "group": "temperature",
-      "hierarchy": [
-        "key_0|key_1"
-      ],
-      "model": [
-        "{package_0}model_1"
-      ],
-      "name": {
-        "i18n": {
-          "en-US": "domain_0.ceiling"
-        }
-      },
-      "nameWithDomain": {
-        "i18n": {
-          "en-US": "domain_0.ceiling (domain_0)"
-        }
-      },
-      "note": {
-        "i18n": {
-          "en-US": "domain_0.ceiling"
-        }
-      },
-      "querySpecs": {
-        "timeseries": {
-          "key_0": {
-            "key_1": {
-              "periods": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min"
-              ]
-            }
-          }
-        }
-      },
-      "startOfDay": 0,
-      "timezone": "Europe/Moscow",
-      "unit": "",
-      "valueType": "number:statistics"
-    },
-    "domain_0.floor": {
-      "decimal": 6,
-      "default-stats": "avg",
-      "group": "temperature",
-      "hierarchy": [
-        "key_0|key_1"
-      ],
-      "model": [
-        "{package_0}model_1"
-      ],
-      "name": {
-        "i18n": {
-          "en-US": "domain_0.floor"
-        }
-      },
-      "nameWithDomain": {
-        "i18n": {
-          "en-US": "domain_0.floor (domain_0)"
-        }
-      },
-      "note": {
-        "i18n": {
-          "en-US": "domain_0.floor"
-        }
-      },
-      "querySpecs": {
-        "timeseries": {
-          "key_0": {
-            "key_1": {
-              "periods": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min"
-              ]
-            }
-          }
-        }
-      },
-      "startOfDay": 0,
-      "timezone": "Europe/Moscow",
-      "unit": "",
-      "valueType": "number:statistics"
-    },
-    "domain_0.output": {
+    "domain_0.real": {
       "decimal": 6,
       "default-stats": "avg",
       "group": null,
@@ -103,17 +13,17 @@
       ],
       "name": {
         "i18n": {
-          "en-US": "domain_0.output"
+          "en-US": "domain_0.real"
         }
       },
       "nameWithDomain": {
         "i18n": {
-          "en-US": "domain_0.output (domain_0)"
+          "en-US": "domain_0.real (domain_0)"
         }
       },
       "note": {
         "i18n": {
-          "en-US": "domain_0.output"
+          "en-US": "domain_0.real"
         }
       },
       "querySpecs": {
@@ -125,7 +35,10 @@
                 "15s",
                 "1min",
                 "5min",
-                "15min"
+                "15min",
+                "1h",
+                "12h",
+                "1d"
               ]
             }
           }
@@ -134,131 +47,6 @@
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
       "unit": "",
-      "valueType": "number:statistics"
-    },
-    "domain_0.string": {
-      "decimal": 6,
-      "default-stats": "avg",
-      "group": "string_group",
-      "hierarchy": [
-        "key_0|key_1"
-      ],
-      "model": [
-        "{package_0}model_1"
-      ],
-      "name": {
-        "i18n": {
-          "en-US": "domain_0.string"
-        }
-      },
-      "nameWithDomain": {
-        "i18n": {
-          "en-US": "domain_0.string (domain_0)"
-        }
-      },
-      "note": {
-        "i18n": {
-          "en-US": "domain_0.string"
-        }
-      },
-      "querySpecs": {
-        "timeseries": {
-          "key_0": {
-            "key_1": {
-              "periods": [
-                "5s"
-              ]
-            }
-          }
-        }
-      },
-      "startOfDay": 0,
-      "timezone": "Europe/Moscow",
-      "unit": "",
-      "valueType": "number:statistics"
-    },
-    "domain_0.string1": {
-      "decimal": 6,
-      "default-stats": "avg",
-      "group": "string_group",
-      "hierarchy": [
-        "key_0|key_1"
-      ],
-      "model": [
-        "{package_0}model_1"
-      ],
-      "name": {
-        "i18n": {
-          "en-US": "domain_0.string1"
-        }
-      },
-      "nameWithDomain": {
-        "i18n": {
-          "en-US": "domain_0.string1 (domain_0)"
-        }
-      },
-      "note": {
-        "i18n": {
-          "en-US": "domain_0.string1"
-        }
-      },
-      "querySpecs": {
-        "timeseries": {
-          "key_0": {
-            "key_1": {
-              "periods": [
-                "5s"
-              ]
-            }
-          }
-        }
-      },
-      "startOfDay": 0,
-      "timezone": "Europe/Moscow",
-      "unit": "",
-      "valueType": "number:statistics"
-    },
-    "domain_0.temperature": {
-      "decimal": 2,
-      "default-stats": "avg",
-      "group": "temperature",
-      "hierarchy": [
-        "key_0|key_1"
-      ],
-      "model": [
-        "{package_0}model_1"
-      ],
-      "name": "domain_0.temperature",
-      "nameWithDomain": {
-        "i18n": {
-          "en-US": "domain_0.temperature (domain_0)"
-        }
-      },
-      "note": {
-        "i18n": {}
-      },
-      "querySpecs": {
-        "timeseries": {
-          "key_0": {
-            "key_1": {
-              "periods": [
-                "15s",
-                "5min",
-                "5s",
-                "1min",
-                "15min"
-              ]
-            }
-          }
-        }
-      },
-      "startOfDay": 0,
-      "timezone": "Europe/Moscow",
-      "unit": {
-        "i18n": {
-          "en-US": ""
-        }
-      },
       "valueType": "number:statistics"
     }
   }

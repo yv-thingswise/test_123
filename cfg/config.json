@@ -88,107 +88,28 @@
             {
               "aggregated": false,
               "category": [],
+              "decimals": 6,
               "default_stats": "avg",
-              "group": "temperature",
               "index": false,
               "kind": "direct",
-              "name": "domain_0.ceiling",
-              "original_name": "ceiling",
+              "name": "domain_0.real",
+              "original_name": "real",
               "policy": "drop-field",
               "resolution": [
                 "5s",
                 "15s",
                 "1min",
                 "5min",
-                "15min"
-              ],
-              "timeseries": true,
-              "type": "number"
-            },
-            {
-              "aggregated": false,
-              "category": [],
-              "default_stats": "avg",
-              "group": "temperature",
-              "index": false,
-              "kind": "direct",
-              "name": "domain_0.floor",
-              "original_name": "floor",
-              "policy": "drop-field",
-              "resolution": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min"
-              ],
-              "timeseries": true,
-              "type": "number"
-            },
-            {
-              "aggregated": false,
-              "category": [],
-              "default_stats": "avg",
-              "group": "string_group",
-              "index": false,
-              "kind": "direct",
-              "name": "domain_0.string",
-              "original_name": "string",
-              "policy": "drop-field",
-              "raw_data_resolution": "5s",
-              "resolution": [],
-              "timeseries": true,
-              "type": "string"
-            },
-            {
-              "aggregated": false,
-              "category": [],
-              "default_stats": "avg",
-              "group": "string_group",
-              "index": false,
-              "kind": "direct",
-              "name": "domain_0.string1",
-              "original_name": "string1",
-              "policy": "drop-field",
-              "raw_data_resolution": "5s",
-              "resolution": [],
-              "timeseries": true,
-              "type": "string"
-            },
-            {
-              "aggregated": false,
-              "category": [],
-              "default_stats": "avg",
-              "index": false,
-              "kind": "direct",
-              "name": "domain_0.output",
-              "original_name": "output",
-              "policy": "drop-field",
-              "resolution": [
-                "5s",
-                "15s",
-                "1min",
-                "5min",
-                "15min"
+                "15min",
+                "1h",
+                "12h",
+                "1d"
               ],
               "timeseries": true,
               "type": "number"
             }
           ],
-          "groups": [
-            {
-              "label": {
-                "i18n": {}
-              },
-              "name": "domain_0.temperature"
-            },
-            {
-              "label": {
-                "i18n": {}
-              },
-              "name": "domain_0.string_group"
-            }
-          ],
+          "groups": [],
           "mangled_name": "package_0___model_1__domain_0"
         }
       },
