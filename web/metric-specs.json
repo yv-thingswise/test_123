@@ -2,7 +2,7 @@
   "commandSpecs": {},
   "metricSpecs": {
     "domain_0.real": {
-      "decimal": 6,
+      "decimal": 2,
       "default-stats": "avg",
       "group": null,
       "hierarchy": [
@@ -46,7 +46,11 @@
       },
       "startOfDay": 0,
       "timezone": "Europe/Moscow",
-      "unit": "",
+      "unit": {
+        "i18n": {
+          "en-US": ""
+        }
+      },
       "valueType": "number:statistics"
     }
   }

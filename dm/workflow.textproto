@@ -1,0 +1,285 @@
+templates {
+  key: "package_0___model_0"
+  value {
+    name: "package_0___model_0"
+    digital_machine {
+      key {
+        keyEntry {
+          compositeKey {
+            key: "key_0"
+          }
+        }
+      }
+      dm_period: "1h"
+      ttl_sec: 86400
+    }
+  }
+}
+templates {
+  key: "package_0___model_1"
+  value {
+    name: "package_0___model_1"
+    digital_machine {
+      key {
+        keyEntry {
+          compositeKey {
+            key: "key_0"
+            key: "key_1"
+          }
+        }
+      }
+      dm_period: "1d"
+      ttl_sec: 86400
+      nodes {
+        input {
+          stream: "domain_0_input"
+          field {
+            value: "domain_0.real"
+          }
+        }
+      }
+      nodes {
+        stream {
+        }
+        time_aggregate {
+          resolution: "5s"
+        }
+      }
+      nodes {
+        stream {
+          index: 1
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "5s"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 2
+        }
+        time_aggregate {
+          resolution: "15s"
+        }
+      }
+      nodes {
+        stream {
+          index: 3
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "15s"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 4
+        }
+        time_aggregate {
+          resolution: "1min"
+        }
+      }
+      nodes {
+        stream {
+          index: 5
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 5
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "1min"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 7
+        }
+        time_aggregate {
+          resolution: "5min"
+        }
+      }
+      nodes {
+        stream {
+          index: 8
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "5min"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 9
+        }
+        time_aggregate {
+          resolution: "15min"
+        }
+      }
+      nodes {
+        stream {
+          index: 10
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "15min"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 11
+        }
+        time_aggregate {
+          resolution: "1h"
+        }
+      }
+      nodes {
+        stream {
+          index: 12
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "1h"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 13
+        }
+        time_aggregate {
+          resolution: "12h"
+        }
+      }
+      nodes {
+        stream {
+          index: 14
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "12h"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 15
+        }
+        time_aggregate {
+          resolution: "1d"
+        }
+      }
+      nodes {
+        stream {
+          index: 14
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "12h"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 1
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "5s"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 10
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "15min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 12
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1h"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 8
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "5min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 16
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1d"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 3
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "15s"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 collate_search: false
 mixins:
-- name: package_0___model_1__Basic
 - fields:
     class: string
     key_0: string
     key_1: string
   name: Lookup
+- name: package_0___model_1__Basic
 - name: package_0___model_1__domain_0
 - name: package_0___model_0__Basic
