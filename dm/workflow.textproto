@@ -100,6 +100,17 @@ templates {
       }
       nodes {
         stream {
+          index: 1
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "5s"
+          }
+        }
+      }
+      nodes {
+        stream {
           index: 5
         }
         placeholder {
@@ -113,7 +124,7 @@ templates {
       }
       nodes {
         stream {
-          index: 7
+          index: 8
         }
         time_aggregate {
           resolution: "5min"
@@ -121,7 +132,18 @@ templates {
       }
       nodes {
         stream {
-          index: 8
+          index: 9
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "5min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 9
         }
         placeholder {
           spec {
@@ -134,7 +156,7 @@ templates {
       }
       nodes {
         stream {
-          index: 9
+          index: 11
         }
         time_aggregate {
           resolution: "15min"
@@ -142,7 +164,7 @@ templates {
       }
       nodes {
         stream {
-          index: 10
+          index: 12
         }
         placeholder {
           spec {
@@ -155,7 +177,7 @@ templates {
       }
       nodes {
         stream {
-          index: 11
+          index: 13
         }
         time_aggregate {
           resolution: "1h"
@@ -163,7 +185,7 @@ templates {
       }
       nodes {
         stream {
-          index: 12
+          index: 14
         }
         placeholder {
           spec {
@@ -176,7 +198,7 @@ templates {
       }
       nodes {
         stream {
-          index: 13
+          index: 15
         }
         time_aggregate {
           resolution: "12h"
@@ -184,7 +206,7 @@ templates {
       }
       nodes {
         stream {
-          index: 14
+          index: 16
         }
         placeholder {
           spec {
@@ -197,76 +219,10 @@ templates {
       }
       nodes {
         stream {
-          index: 15
+          index: 17
         }
         time_aggregate {
           resolution: "1d"
-        }
-      }
-      nodes {
-        stream {
-          index: 14
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "12h"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 1
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "5s"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 10
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "15min"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 12
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "1h"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 8
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "5min"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 16
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "1d"
-          }
         }
       }
       nodes {
@@ -277,6 +233,50 @@ templates {
           label: "domain_0.real"
           resolution {
             value: "15s"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 16
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "12h"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 12
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "15min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 18
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1d"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 14
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1h"
           }
         }
       }

@@ -41,63 +41,63 @@
     "stages": [
       {
         "title": "project.status.edge.fetch",
-        "log": "[DEBUG] - 2023-02-16 10:34:21,466 - tw_model_designer - preparing mongo client\n[DEBUG] - 2023-02-16 10:34:21,466 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-02-16 10:34:21,486 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-02-16 10:34:21,486 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-02-16 10:34:21,495 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-02-16 10:34:21,495 - tw_model_designer - preparing project dao\n[DEBUG] - 2023-02-16 10:34:21,495 - tw_model_designer - reading project\n[DEBUG] - 2023-02-16 10:34:21,565 - tw_model_designer - reading project package\n[DEBUG] - 2023-02-16 10:34:21,566 - tw_model_designer - initiating deployment\n[INFO] - 2023-02-16 10:34:21,579 - tw_model_designer - Retrieving edge mgmt information\n[DEBUG] - 2023-02-16 10:34:21,581 - tw_model_designer - Retrieved edge mgmt info successfully\n",
+        "log": "[DEBUG] - 2023-05-16 14:14:58,993 - tw_model_designer - preparing mongo client\n[DEBUG] - 2023-05-16 14:14:58,993 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-16 14:14:59,021 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-16 14:14:59,021 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-16 14:14:59,050 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-16 14:14:59,051 - tw_model_designer - preparing project dao\n[DEBUG] - 2023-05-16 14:14:59,051 - tw_model_designer - reading project\n[DEBUG] - 2023-05-16 14:14:59,139 - tw_model_designer - reading project package\n[DEBUG] - 2023-05-16 14:14:59,141 - tw_model_designer - initiating deployment\n[INFO] - 2023-05-16 14:14:59,226 - tw_model_designer - Retrieving edge mgmt information\n[DEBUG] - 2023-05-16 14:14:59,228 - tw_model_designer - Retrieved edge mgmt info successfully\n",
         "success": true
       },
       {
         "title": "project.status.workdir.init",
-        "log": "",
+        "log": "[INFO] - 2023-05-16 14:14:59,235 - tw_model_designer - directory /opt/thingswise/model-designer/build does not exist, mkdir\n[INFO] - 2023-05-16 14:14:59,239 - tw_model_designer - directory /opt/thingswise/model-designer/build/test/123 does not exist, mkdir\n",
         "success": true
       },
       {
         "title": "project.status.repo.setting.up",
-        "log": "[INFO] - 2023-02-16 10:34:21,654 - tw_model_designer - local repo with .git file already exists in directory /opt/thingswise/model-designer/build/test/123\n[DEBUG] - 2023-02-16 10:34:21,673 - git.util - Failed checking if running in CYGWIN due to: FileNotFoundError(2, \"No such file or directory: '/usr/bin/uname'\")\n[INFO] - 2023-02-16 10:34:21,693 - tw_model_designer - Repository git@github.com:yv-thingswise/test_123.git successfully initialized in the directory /opt/thingswise/model-designer/build/test/123\n",
+        "log": "[INFO] - 2023-05-16 14:14:59,248 - tw_model_designer - Cloning repository: git@github.com:yv-thingswise/test_123.git branch: main\n[DEBUG] - 2023-05-16 14:14:59,267 - git.util - Failed checking if running in CYGWIN due to: FileNotFoundError(2, \"No such file or directory: '/usr/bin/uname'\")\n[DEBUG] - 2023-05-16 14:14:59,271 - git.cmd - Popen(['git', 'clone', '-v', '--', 'git@github.com:yv-thingswise/test_123.git', '/opt/thingswise/model-designer/build/test/123'], cwd=/, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2023-05-16 14:15:01,078 - git.repo.base - Cmd(['git', 'clone', '-v', '--', 'git@github.com:yv-thingswise/test_123.git', '/opt/thingswise/model-designer/build/test/123'])'s unused stdout: \n[INFO] - 2023-05-16 14:15:01,094 - tw_model_designer - Repository git@github.com:yv-thingswise/test_123.git successfully initialized in the directory /opt/thingswise/model-designer/build/test/123\n",
         "success": true
       },
       {
         "title": "project.status.repo.sync",
-        "log": "[INFO] - 2023-02-16 10:34:21,751 - tw_model_designer - Synchronizing repo\n[DEBUG] - 2023-02-16 10:34:21,756 - git.cmd - Popen(['git', 'fetch', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2023-02-16 10:34:23,025 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-02-16 10:34:23,045 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-02-16 10:34:23,063 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-02-16 10:34:23,082 - git.cmd - Popen(['git', 'clean', '-d', '-x', '-f'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-02-16 10:34:23,101 - git.cmd - Popen(['git', 'checkout', '--', '.'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-02-16 10:34:23,133 - git.cmd - Popen(['git', 'checkout', 'main'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[INFO] - 2023-02-16 10:34:23,157 - tw_model_designer - Running git pull\n[DEBUG] - 2023-02-16 10:34:23,160 - git.cmd - Popen(['git', 'pull', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[INFO] - 2023-02-16 10:34:24,334 - tw_model_designer - Repo is synchronized, delete stale files (except src directory)\n[INFO] - 2023-02-16 10:34:24,336 - tw_model_designer - Clean up source directory, excluding: ['tests/.*', 'data/.*', 'jets/.*', 'dt/project\\\\.yml', 'dt/dt\\\\.yml', 'dt/.*/dt\\\\.yml', 'dt/[^/]+/dm/_legacy/.*', 'web/web\\\\.json', 'web/field\\\\-specs\\\\.json', 'web/geoData/struct\\\\.json']\n",
+        "log": "[INFO] - 2023-05-16 14:15:01,130 - tw_model_designer - Synchronizing repo\n[DEBUG] - 2023-05-16 14:15:01,134 - git.cmd - Popen(['git', 'fetch', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2023-05-16 14:15:02,689 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-16 14:15:02,718 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-16 14:15:02,771 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-16 14:15:02,791 - git.cmd - Popen(['git', 'clean', '-d', '-x', '-f'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-16 14:15:02,813 - git.cmd - Popen(['git', 'checkout', '--', '.'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-16 14:15:02,841 - git.cmd - Popen(['git', 'checkout', 'main'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[INFO] - 2023-05-16 14:15:02,884 - tw_model_designer - Running git pull\n[DEBUG] - 2023-05-16 14:15:02,885 - git.cmd - Popen(['git', 'pull', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[INFO] - 2023-05-16 14:15:04,472 - tw_model_designer - Repo is synchronized, delete stale files (except src directory)\n[INFO] - 2023-05-16 14:15:04,475 - tw_model_designer - Clean up source directory, excluding: ['tests/.*', 'data/.*', 'jets/.*', 'dt/project\\\\.yml', 'dt/dt\\\\.yml', 'dt/.*/dt\\\\.yml', 'dt/[^/]+/dm/_legacy/.*', 'web/web\\\\.json', 'web/field\\\\-specs\\\\.json', 'web/geoData/struct\\\\.json']\n",
         "success": true
       },
       {
         "title": "project.status.repo.success",
-        "log": "[INFO] - 2023-02-16 10:34:24,359 - tw_model_designer - Writing json configs\n[INFO] - 2023-02-16 10:34:24,478 - tw_model_designer - write package: package_0 json config\n[INFO] - 2023-02-16 10:34:24,479 - tw_model_designer - Writing project json dump\n[WARNING] - 2023-02-16 10:34:24,482 - tw_model_designer - Default key/secret value is used in project security settings\n[INFO] - 2023-02-16 10:34:24,482 - tw_model_designer - Writing src/jets/sec-config.json\n",
+        "log": "[INFO] - 2023-05-16 14:15:04,568 - tw_model_designer - Writing json configs\n[INFO] - 2023-05-16 14:15:04,975 - tw_model_designer - write package: package_0 json config\n[INFO] - 2023-05-16 14:15:04,976 - tw_model_designer - Writing project json dump\n[WARNING] - 2023-05-16 14:15:04,980 - tw_model_designer - Default key/secret value is used in project security settings\n[INFO] - 2023-05-16 14:15:04,980 - tw_model_designer - Writing src/jets/sec-config.json\n",
         "success": true
       },
       {
         "title": "project.status.deploy.yoi",
-        "log": "[INFO] - 2023-02-16 10:34:24,491 - tw_model_designer - Running Digital Twin Abstract Model Converter\n[INFO] - 2023-02-16 10:34:24,492 - yoi_abstract_model - parsing /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n[INFO] - 2023-02-16 10:34:24,520 - yoi_abstract_model - parsed /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n\n",
+        "log": "[INFO] - 2023-05-16 14:15:05,065 - tw_model_designer - Running Digital Twin Abstract Model Converter\n[INFO] - 2023-05-16 14:15:05,065 - yoi_abstract_model - parsing /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n[INFO] - 2023-05-16 14:15:05,089 - yoi_abstract_model - parsed /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n\n",
         "success": true
       },
       {
         "title": "project.status.deploy.generation",
-        "log": "[INFO] - 2023-02-16 10:34:24,558 - tw_model_designer - Abstract model conversion finished, generating model code\n",
+        "log": "[INFO] - 2023-05-16 14:15:05,151 - tw_model_designer - Abstract model conversion finished, generating model code\n",
         "success": true
       },
       {
         "title": "project.status.deploy.3D",
-        "log": "[INFO] - 2023-02-16 10:34:24,567 - tw_model_designer - Model code generation finished, preparing 3D models\n[INFO] - 2023-02-16 10:34:24,567 - tw_model_designer - dumping 3D model files\n",
+        "log": "[INFO] - 2023-05-16 14:15:05,265 - tw_model_designer - Model code generation finished, preparing 3D models\n[INFO] - 2023-05-16 14:15:05,266 - tw_model_designer - dumping 3D model files\n",
         "success": true
       },
       {
         "title": "project.status.deploy.configuration",
-        "log": "[INFO] - 2023-02-16 10:34:24,577 - tw_model_designer - Prepared 3D models, creating project configuration\n[INFO] - 2023-02-16 10:34:24,577 - tw_model_designer - Write to /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n",
+        "log": "[INFO] - 2023-05-16 14:15:05,378 - tw_model_designer - Prepared 3D models, creating project configuration\n[INFO] - 2023-05-16 14:15:05,379 - tw_model_designer - Write to /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n",
         "success": true
       },
       {
         "title": "project.status.deploy.dtc",
-        "log": "[INFO] - 2023-02-16 10:34:24,581 - tw_model_designer - Project configuration finished, running Digital Twin Compiler\n[INFO] - 2023-02-16 10:34:24,598 - tw_digital_twin_sdk - loading project properties from /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n[INFO] - 2023-02-16 10:34:24,821 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/dt/package_0/dm to /opt/thingswise/model-designer/build/test/123/dm/package_0\n[INFO] - 2023-02-16 10:34:24,826 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/config.json\n[INFO] - 2023-02-16 10:34:24,829 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dm/models.yaml\n[INFO] - 2023-02-16 10:34:24,867 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/dt/init_data.json to /opt/thingswise/model-designer/build/test/123/dt/init_data.json\n[INFO] - 2023-02-16 10:34:24,868 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/init_roles.json to /opt/thingswise/model-designer/build/test/123/dt/init_roles.json\n[INFO] - 2023-02-16 10:34:24,891 - digital_machine.runtime.digital_machine_runtime - Loading package: package_0 [test.123.dm.package_0]\n[INFO] - 2023-02-16 10:34:24,914 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_0 [<class 'type'>] from package test/123/package_0\n[INFO] - 2023-02-16 10:34:24,914 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_0 to package_0___model_0\n[INFO] - 2023-02-16 10:34:24,914 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_1 [<class 'type'>] from package test/123/package_0\n[INFO] - 2023-02-16 10:34:24,914 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_1 to package_0___model_1\n[DEBUG] - 2023-02-16 10:34:24,915 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_0, [], {'{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2023-02-16 10:34:24,915 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_1, [], {'{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2023-02-16 10:34:24,916 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.outputs = ()\n[DEBUG] - 2023-02-16 10:34:24,917 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.exports = (Export('domain_0.output',TimeAggregation(TimeAggregate(GetComponent(Apply('digital_machine.templates.templates___model_1.model0',TimeAggregation(TimeAggregate(<UNBOUND PLACEHOLDER:domain_0.ceiling/5s>,'5s'),'5s',2),Conditional(NumberBinaryPredicate(Apply('digital_machine.digital_machine_helpers___ConditionHelpers._is_set',Input(stream(domain_0_input),'domain_0.ceiling',None,None,None)),8,1),Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(.state),'i_f.model0.source_temp',None,None,None)),Conditional(NumberBinaryPredicate(Apply('digital_machine.digital_machine_helpers___ConditionHelpers._is_set',Input(stream(domain_0_input),'domain_0.floor',None,None,None)),8,1),Input(stream(domain_0_input),'domain_0.floor',None,None,None),Input(stream(.state),'i_f.model0.source_temp',None,None,None)),Conditional(NumberBinaryPredicate(Apply('digital_machine.digital_machine_helpers___ConditionHelpers._is_set',StreamGroup(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(domain_0_input),'domain_0.floor',None,None,None))),8,1),StreamGroup(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(domain_0_input),'domain_0.floor',None,None,None)),Input(stream(.state),'i_f.model0.source_temp',None,None,None)),Input(stream(domain_0_input),'domain_0.string',None,None,None),Input(stream(domain_0_input),'domain_0.string1',None,None,None),Input(stream(domain_0_input),'domain_0.string',None,None,None),TimeAggregation(TimeAggregate(<UNBOUND PLACEHOLDER:domain_0.ceiling/5s>,'5s'),'5s',2),TimeAggregation(TimeAggregate(<UNBOUND PLACEHOLDER:domain_0.floor/5s>,'5s'),'5s',2),TimeAggregation(TimeAggregate(<UNBOUND PLACEHOLDER:domain_0.temperature/5s>,'5s'),'5s',2),Input(stream(.state),'last_model_invocation[model0]',None,None,-1000000.0)),0),'5s'),'5s',2),'5s',False), Export('domain_0.ceiling',TimeAggregate(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),'5s'),'5s',False), Export('domain_0.ceiling',TimeAggregate(Placeholder('domain_0.ceiling','5s'),'15s'),'15s',False), Export('domain_0.ceiling',TimeAggregate(Placeholder('domain_0.ceiling','15s'),'1min'),'1min',False), Export('domain_0.ceiling',TimeAggregate(Placeholder('domain_0.ceiling','1min'),'5min'),'5min',False), Export('domain_0.ceiling',TimeAggregate(Placeholder('domain_0.ceiling','5min'),'15min'),'15min',False), Export('domain_0.floor',TimeAggregate(Input(stream(domain_0_input),'domain_0.floor',None,None,None),'5s'),'5s',False), Export('domain_0.floor',TimeAggregate(Placeholder('domain_0.floor','5s'),'15s'),'15s',False), Export('domain_0.floor',TimeAggregate(Placeholder('domain_0.floor','15s'),'1min'),'1min',False), Export('domain_0.floor',TimeAggregate(Placeholder('domain_0.floor','1min'),'5min'),'5min',False), Export('domain_0.floor',TimeAggregate(Placeholder('domain_0.floor','5min'),'15min'),'15min',False), Export('domain_0.string',TimeAggregate(Input(stream(domain_0_input),'domain_0.string',None,None,None),'5s'),'5s',False), Export('domain_0.string1',TimeAggregate(Input(stream(domain_0_input),'domain_0.string1',None,None,None),'5s'),'5s',False), Export('domain_0.output',TimeAggregate(Placeholder('domain_0.output','5s'),'5s'),'5s',False), Export('domain_0.output',TimeAggregate(Placeholder('domain_0.output','5s'),'15s'),'15s',False), Export('domain_0.output',TimeAggregate(Placeholder('domain_0.output','15s'),'1min'),'1min',False), Export('domain_0.output',TimeAggregate(Placeholder('domain_0.output','1min'),'5min'),'5min',False), Export('domain_0.output',TimeAggregate(Placeholder('domain_0.output','5min'),'15min'),'15min',False), Export('domain_0.temperature',TimeAggregate(StreamGroup(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(domain_0_input),'domain_0.floor',None,None,None)),'15s'),'15s',False), Export('domain_0.temperature',TimeAggregate(StreamGroup(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(domain_0_input),'domain_0.floor',None,None,None)),'5min'),'5min',False), Export('domain_0.temperature',TimeAggregate(StreamGroup(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(domain_0_input),'domain_0.floor',None,None,None)),'5s'),'5s',False), Export('domain_0.temperature',TimeAggregate(StreamGroup(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(domain_0_input),'domain_0.floor',None,None,None)),'1min'),'1min',False), Export('domain_0.temperature',TimeAggregate(StreamGroup(Input(stream(domain_0_input),'domain_0.ceiling',None,None,None),Input(stream(domain_0_input),'domain_0.floor',None,None,None)),'15min'),'15min',False))\n[DEBUG] - 2023-02-16 10:34:24,919 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.outputs = ()\n[DEBUG] - 2023-02-16 10:34:24,919 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.exports = ()\n[INFO] - 2023-02-16 10:34:24,925 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/input.json\n[INFO] - 2023-02-16 10:34:24,926 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/jets to /opt/thingswise/model-designer/build/test/123/jets\n[INFO] - 2023-02-16 10:34:24,926 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/cfg/edge-upload-mapping.json to /opt/thingswise/model-designer/build/test/123/cfg/edge-upload-mapping.json\n[INFO] - 2023-02-16 10:34:24,946 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dt/dt.yml\n[INFO] - 2023-02-16 10:34:24,946 - tw_digital_twin_sdk - empty output.json is omitted\n[INFO] - 2023-02-16 10:34:24,946 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/web to /opt/thingswise/model-designer/build/test/123/web\n[INFO] - 2023-02-16 10:34:24,947 - tw_digital_twin_sdk - loading /opt/thingswise/model-designer/build/test/123/src/web/geoData/struct.json\n[INFO] - 2023-02-16 10:34:24,948 - tw_digital_twin_sdk - generate objectHierarchies from geo struct and model tree\n[INFO] - 2023-02-16 10:34:25,042 - tw_digital_twin_sdk - web.json: pageTitle is not set\n[INFO] - 2023-02-16 10:34:25,042 - tw_digital_twin_sdk - web.json: faviconPath is not set\n[INFO] - 2023-02-16 10:34:25,042 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/favicon.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2023-02-16 10:34:25,057 - tw_digital_twin_sdk - web.json: brandImagePath is not set\n[INFO] - 2023-02-16 10:34:25,057 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/logo.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2023-02-16 10:34:25,067 - tw_digital_twin_sdk - web.json: languages is not set\n[INFO] - 2023-02-16 10:34:25,067 - tw_digital_twin_sdk - web.json: defaultLanguage is not set\n[INFO] - 2023-02-16 10:34:25,067 - tw_digital_twin_sdk - web.json: metadataDomain is not set\n[INFO] - 2023-02-16 10:34:25,067 - tw_digital_twin_sdk - metadataDeviceField: metadataDeviceField is not set\n[INFO] - 2023-02-16 10:34:25,067 - tw_digital_twin_sdk - web.json: objectHierarchy is not set\n[INFO] - 2023-02-16 10:34:25,068 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/web.json\n[INFO] - 2023-02-16 10:34:25,068 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/design.json\n[INFO] - 2023-02-16 10:34:25,069 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/objects.json\n[INFO] - 2023-02-16 10:34:25,084 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/metric-specs.json\n",
+        "log": "[INFO] - 2023-05-16 14:15:05,455 - tw_model_designer - Project configuration finished, running Digital Twin Compiler\n[INFO] - 2023-05-16 14:15:05,488 - tw_digital_twin_sdk - loading project properties from /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n[INFO] - 2023-05-16 14:15:05,737 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/dt/package_0/dm to /opt/thingswise/model-designer/build/test/123/dm/package_0\n[INFO] - 2023-05-16 14:15:05,742 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/config.json\n[INFO] - 2023-05-16 14:15:05,744 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dm/models.yaml\n[INFO] - 2023-05-16 14:15:05,789 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/dt/init_data.json to /opt/thingswise/model-designer/build/test/123/dt/init_data.json\n[INFO] - 2023-05-16 14:15:05,789 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/init_roles.json to /opt/thingswise/model-designer/build/test/123/dt/init_roles.json\n[INFO] - 2023-05-16 14:15:05,816 - digital_machine.runtime.digital_machine_runtime - Loading package: package_0 [test.123.dm.package_0]\n[INFO] - 2023-05-16 14:15:05,825 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_1 [<class 'type'>] from package test/123/package_0\n[INFO] - 2023-05-16 14:15:05,825 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_1 to package_0___model_1\n[INFO] - 2023-05-16 14:15:05,825 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_0 [<class 'type'>] from package test/123/package_0\n[INFO] - 2023-05-16 14:15:05,826 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_0 to package_0___model_0\n[DEBUG] - 2023-05-16 14:15:05,826 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_0, [], {'{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2023-05-16 14:15:05,826 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_1, [], {'{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2023-05-16 14:15:05,828 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.outputs = ()\n[DEBUG] - 2023-05-16 14:15:05,828 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.exports = (Export('child_domain_0.real',TimeAggregate(Input(stream(child_domain_0_input),'child_domain_0.real',None,None,None),'5s'),'5s',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','5s'),'15s'),'15s',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','15s'),'1min'),'1min',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','1min'),'5min'),'5min',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','5min'),'15min'),'15min',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','15min'),'1h'),'1h',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','1h'),'12h'),'12h',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','12h'),'1d'),'1d',False), Export('domain_1.string',TimeAggregate(Input(stream(domain_1_input),'domain_1.string',None,None,None),'1s'),'1s',False))\n[DEBUG] - 2023-05-16 14:15:05,829 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.outputs = ()\n[DEBUG] - 2023-05-16 14:15:05,829 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.exports = ()\n[INFO] - 2023-05-16 14:15:05,831 - tw_digital_twin_sdk - serializing digital machine workflow graph\n[INFO] - 2023-05-16 14:15:05,846 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dm/workflow.textproto\n[INFO] - 2023-05-16 14:15:05,846 - tw_digital_twin_sdk - serialized digital machine workflow graph successfully\n[INFO] - 2023-05-16 14:15:05,847 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/input.json\n[INFO] - 2023-05-16 14:15:05,847 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/jets to /opt/thingswise/model-designer/build/test/123/jets\n[INFO] - 2023-05-16 14:15:05,848 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/cfg/edge-upload-mapping.json to /opt/thingswise/model-designer/build/test/123/cfg/edge-upload-mapping.json\n[INFO] - 2023-05-16 14:15:05,882 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dt/dt.yml\n[INFO] - 2023-05-16 14:15:05,883 - tw_digital_twin_sdk - empty output.json is omitted\n[INFO] - 2023-05-16 14:15:05,883 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/web to /opt/thingswise/model-designer/build/test/123/web\n[INFO] - 2023-05-16 14:15:05,885 - tw_digital_twin_sdk - loading /opt/thingswise/model-designer/build/test/123/src/web/geoData/struct.json\n[INFO] - 2023-05-16 14:15:05,886 - tw_digital_twin_sdk - generate objectHierarchies from geo struct and model tree\n[INFO] - 2023-05-16 14:15:05,898 - tw_digital_twin_sdk - web.json: pageTitle is not set\n[INFO] - 2023-05-16 14:15:05,898 - tw_digital_twin_sdk - web.json: faviconPath is not set\n[INFO] - 2023-05-16 14:15:05,899 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/favicon.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2023-05-16 14:15:05,899 - tw_digital_twin_sdk - web.json: brandImagePath is not set\n[INFO] - 2023-05-16 14:15:05,900 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/logo.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2023-05-16 14:15:05,901 - tw_digital_twin_sdk - web.json: languages is not set\n[INFO] - 2023-05-16 14:15:05,901 - tw_digital_twin_sdk - web.json: defaultLanguage is not set\n[INFO] - 2023-05-16 14:15:05,901 - tw_digital_twin_sdk - web.json: metadataDomain is not set\n[INFO] - 2023-05-16 14:15:05,901 - tw_digital_twin_sdk - metadataDeviceField: metadataDeviceField is not set\n[INFO] - 2023-05-16 14:15:05,901 - tw_digital_twin_sdk - web.json: objectHierarchy is not set\n[INFO] - 2023-05-16 14:15:05,902 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/web.json\n[INFO] - 2023-05-16 14:15:05,903 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/design.json\n[INFO] - 2023-05-16 14:15:05,903 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/objects.json\n[INFO] - 2023-05-16 14:15:05,920 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/metric-specs.json\n",
         "success": true
       }
     ],
     "state": "success",
-    "worker_timestamp": "2023-02-15T14:51:54.538886+00:00",
-    "build_time": "2023-02-16T10:34:25.084565+00:00"
+    "worker_timestamp": "2023-05-16T13:41:45.731572+00:00",
+    "build_time": "2023-05-16T14:15:05.921969+00:00"
   },
   "time_zone": "Europe/Moscow",
   "source_code_encrypted": false,
   "packages": {
-    "6461d00cab89a4bac18efbbd": {
+    "64639042538801ddedb20510": {
       "name": "package_0",
       "package_id": "63d2dfc7c85fbfa7415fe2d2",
       "project": "123",
@@ -105,7 +105,7 @@
       "domains": [
         {
           "_id": {
-            "$oid": "6461d00cab89a4bac18efbc2"
+            "$oid": "64639042538801ddedb20515"
           },
           "columns": [
             {
@@ -121,14 +121,14 @@
           ],
           "kind": "operational",
           "name": "domain_0",
-          "package_id": "6461d00cab89a4bac18efbbd",
+          "package_id": "64639042538801ddedb20510",
           "project": "123",
           "scope": "test",
           "groups": []
         }
       ],
       "models": {
-        "6461d00cab89a4bac18efbbe": {
+        "64639042538801ddedb20511": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -146,9 +146,9 @@
             "y": -73
           },
           "is_collapsed": false,
-          "package_id": "6461d00cab89a4bac18efbbd",
+          "package_id": "64639042538801ddedb20510",
           "package_obj_id": {
-            "$oid": "6461d00cab89a4bac18efbbd"
+            "$oid": "64639042538801ddedb20510"
           },
           "project": "123",
           "relations": {
@@ -157,13 +157,13 @@
           },
           "scope": "test",
           "template_id": "1",
-          "id": "6461d00cab89a4bac18efbbe",
+          "id": "64639042538801ddedb20511",
           "domains": [],
           "timezone": "Europe/Moscow",
           "instances": [
             {
               "_id": {
-                "$oid": "6461d00cab89a4bac18efbc0"
+                "$oid": "64639042538801ddedb20513"
               },
               "coordinates": {
                 "x": -20,
@@ -171,15 +171,15 @@
               },
               "is_collapsed": false,
               "key": "instance_0",
-              "model_id": "6461d00cab89a4bac18efbbe",
-              "package_id": "6461d00cab89a4bac18efbbd",
+              "model_id": "64639042538801ddedb20511",
+              "package_id": "64639042538801ddedb20510",
               "project": "123",
               "relations": {}
             }
           ],
           "models_3d": []
         },
-        "6461d00cab89a4bac18efbbf": {
+        "64639042538801ddedb20512": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -197,22 +197,22 @@
             "y": 145
           },
           "is_collapsed": false,
-          "package_id": "6461d00cab89a4bac18efbbd",
+          "package_id": "64639042538801ddedb20510",
           "package_obj_id": {
-            "$oid": "6461d00cab89a4bac18efbbd"
+            "$oid": "64639042538801ddedb20510"
           },
           "project": "123",
           "relations": {
-            "in_scope_of": "6461d00cab89a4bac18efbbe",
+            "in_scope_of": "64639042538801ddedb20511",
             "in_sub_class_of": []
           },
           "scope": "test",
           "template_id": "1",
-          "id": "6461d00cab89a4bac18efbbf",
+          "id": "64639042538801ddedb20512",
           "domains": [
             {
               "_id": {
-                "$oid": "6461d00cab89a4bac18efbc3"
+                "$oid": "64639042538801ddedb20516"
               },
               "columns": [
                 {
@@ -220,10 +220,10 @@
                 }
               ],
               "kind": "operational",
-              "model_id": "6461d00cab89a4bac18efbbf",
+              "model_id": "64639042538801ddedb20512",
               "name": "domain_0",
-              "package_id": "6461d00cab89a4bac18efbbd",
-              "parent_id": "6461d00cab89a4bac18efbc2",
+              "package_id": "64639042538801ddedb20510",
+              "parent_id": "64639042538801ddedb20515",
               "project": "123",
               "scope": "test",
               "groups": []
@@ -233,7 +233,7 @@
           "instances": [
             {
               "_id": {
-                "$oid": "6461d00cab89a4bac18efbc1"
+                "$oid": "64639042538801ddedb20514"
               },
               "coordinates": {
                 "x": 140,
@@ -241,8 +241,8 @@
               },
               "is_collapsed": false,
               "key": "instance_1",
-              "model_id": "6461d00cab89a4bac18efbbf",
-              "package_id": "6461d00cab89a4bac18efbbd",
+              "model_id": "64639042538801ddedb20512",
+              "package_id": "64639042538801ddedb20510",
               "project": "123",
               "scope": "instance_0",
               "shift_slot_id": null,
@@ -263,25 +263,25 @@
       "keys": [
         {
           "_id": {
-            "$oid": "6461d00cab89a4bac18efbbb"
+            "$oid": "64639042538801ddedb2050e"
           },
           "key": "key_0",
-          "package_id": "6461d00cab89a4bac18efbbd",
+          "package_id": "64639042538801ddedb20510",
           "project": "123",
           "scope": "test"
         },
         {
           "_id": {
-            "$oid": "6461d00cab89a4bac18efbbc"
+            "$oid": "64639042538801ddedb2050f"
           },
           "key": "key_1",
-          "package_id": "6461d00cab89a4bac18efbbd",
+          "package_id": "64639042538801ddedb20510",
           "project": "123",
           "scope": "test"
         }
       ],
       "shift_schedules": [],
-      "id": "6461d00cab89a4bac18efbbd"
+      "id": "64639042538801ddedb20510"
     }
   }
 }
