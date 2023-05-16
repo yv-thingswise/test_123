@@ -70,6 +70,17 @@ templates {
         stream {
           index: 3
         }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "15s"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 3
+        }
         placeholder {
           spec {
             label: "domain_0.real"
@@ -81,7 +92,7 @@ templates {
       }
       nodes {
         stream {
-          index: 4
+          index: 5
         }
         time_aggregate {
           resolution: "1min"
@@ -89,12 +100,128 @@ templates {
       }
       nodes {
         stream {
-          index: 5
+          index: 6
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "1min"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 7
+        }
+        time_aggregate {
+          resolution: "5min"
+        }
+      }
+      nodes {
+        stream {
+          index: 8
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "5min"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 9
+        }
+        time_aggregate {
+          resolution: "15min"
+        }
+      }
+      nodes {
+        stream {
+          index: 10
         }
         export {
           label: "domain_0.real"
           resolution {
-            value: "1min"
+            value: "15min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 10
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "15min"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 12
+        }
+        time_aggregate {
+          resolution: "1h"
+        }
+      }
+      nodes {
+        stream {
+          index: 13
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "1h"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 14
+        }
+        time_aggregate {
+          resolution: "12h"
+        }
+      }
+      nodes {
+        stream {
+          index: 15
+        }
+        placeholder {
+          spec {
+            label: "domain_0.real"
+            resolution {
+              value: "12h"
+            }
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 16
+        }
+        time_aggregate {
+          resolution: "1d"
+        }
+      }
+      nodes {
+        stream {
+          index: 8
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "5min"
           }
         }
       }
@@ -111,134 +238,18 @@ templates {
       }
       nodes {
         stream {
-          index: 5
-        }
-        placeholder {
-          spec {
-            label: "domain_0.real"
-            resolution {
-              value: "1min"
-            }
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 8
-        }
-        time_aggregate {
-          resolution: "5min"
-        }
-      }
-      nodes {
-        stream {
-          index: 9
+          index: 13
         }
         export {
           label: "domain_0.real"
           resolution {
-            value: "5min"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 9
-        }
-        placeholder {
-          spec {
-            label: "domain_0.real"
-            resolution {
-              value: "5min"
-            }
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 11
-        }
-        time_aggregate {
-          resolution: "15min"
-        }
-      }
-      nodes {
-        stream {
-          index: 12
-        }
-        placeholder {
-          spec {
-            label: "domain_0.real"
-            resolution {
-              value: "15min"
-            }
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 13
-        }
-        time_aggregate {
-          resolution: "1h"
-        }
-      }
-      nodes {
-        stream {
-          index: 14
-        }
-        placeholder {
-          spec {
-            label: "domain_0.real"
-            resolution {
-              value: "1h"
-            }
+            value: "1h"
           }
         }
       }
       nodes {
         stream {
           index: 15
-        }
-        time_aggregate {
-          resolution: "12h"
-        }
-      }
-      nodes {
-        stream {
-          index: 16
-        }
-        placeholder {
-          spec {
-            label: "domain_0.real"
-            resolution {
-              value: "12h"
-            }
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 17
-        }
-        time_aggregate {
-          resolution: "1d"
-        }
-      }
-      nodes {
-        stream {
-          index: 3
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "15s"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 16
         }
         export {
           label: "domain_0.real"
@@ -249,34 +260,23 @@ templates {
       }
       nodes {
         stream {
-          index: 12
+          index: 6
         }
         export {
           label: "domain_0.real"
           resolution {
-            value: "15min"
+            value: "1min"
           }
         }
       }
       nodes {
         stream {
-          index: 18
+          index: 17
         }
         export {
           label: "domain_0.real"
           resolution {
             value: "1d"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 14
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "1h"
           }
         }
       }
